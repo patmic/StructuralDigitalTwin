@@ -5,6 +5,8 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=9000&pause=9000&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=a%20→%20b%20⇄%20🕸️" alt="MALTG v3"/>
 <img src="src/assets/line.svg" width="100%"/>
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=800&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=MALTG+v3" alt="MALTG v3"/>
+
 <br/>
 
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
