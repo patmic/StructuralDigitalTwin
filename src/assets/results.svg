@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <defs>
+    <style>
+      @keyframes bar-grow { from{height:0;y:200} to{} }
+      .b1{animation:bar-grow .7s ease .1s both}
+      .b2{animation:bar-grow .7s ease .18s both}
+      .b3{animation:bar-grow .7s ease .26s both}
+      .b4{animation:bar-grow .7s ease .34s both}
+      .b5{animation:bar-grow .7s ease .42s both}
+      .b6{animation:bar-grow .7s ease .50s both}
+      .b7{animation:bar-grow .7s ease .58s both}
+      .b8{animation:bar-grow .7s ease .66s both}
+      .b9{animation:bar-grow .7s ease .74s both}
+    </style>
+    <linearGradient id="vbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#070c1a"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#00e5ff" stroke-width=".3" opacity=".05"/>
+    </pattern>
+    <!-- Bar gradients for each dim -->
+    <linearGradient id="g-togaf"    x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5ff"/><stop offset="100%" stop-color="#0072ff" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-cobit"    x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffc947"/><stop offset="100%" stop-color="#ff6b35" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-nist"     x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d"/><stop offset="100%" stop-color="#c026d3" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-ai"       x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#6366f1" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-bc"       x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10e98c"/><stop offset="100%" stop-color="#06b6d4" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-od"       x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff9a3c"/><stop offset="100%" stop-color="#ffc947" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-sec"      x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f472b6"/><stop offset="100%" stop-color="#e879f9" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-interop"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#10b981" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="g-legaltech" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#3b82f6" stop-opacity=".7"/></linearGradient>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#vbg)"/>
+  <rect width="1200" height="280" fill="url(#vgrid)"/>
+
+  <!-- Header -->
+  <text x="600" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#3d4f6e" letter-spacing="3">
+    VALIDATION RESULTS  ·  9 DIMENSIONS  ·  MALTG_onto vs DT_arch
+  </text>
+  <line x1="80" y1="28" x2="1120" y2="28" stroke="#1a2744" stroke-width=".8"/>
+
+  <!-- Y-axis gridlines -->
+  <line x1="80" y1="200" x2="1140" y2="200" stroke="#1a2744" stroke-width=".8"/>
+  <line x1="80" y1="165" x2="1140" y2="165" stroke="#1a2744" stroke-width=".5" stroke-dasharray="4,4" opacity=".5"/>
+  <line x1="80" y1="130" x2="1140" y2="130" stroke="#1a2744" stroke-width=".5" stroke-dasharray="4,4" opacity=".5"/>
+  <line x1="80" y1="95"  x2="1140" y2="95"  stroke="#1a2744" stroke-width=".5" stroke-dasharray="4,4" opacity=".5"/>
+  <line x1="80" y1="55"  x2="1140" y2="55"  stroke="#1a2744" stroke-width=".5" stroke-dasharray="4,4" opacity=".3"/>
+
+  <!-- Y labels -->
+  <text x="70" y="204" text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#3d4f6e">0</text>
+  <text x="70" y="169" text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#3d4f6e">25</text>
+  <text x="70" y="134" text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#3d4f6e">50</text>
+  <text x="70" y="99"  text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#3d4f6e">75</text>
+  <text x="70" y="59"  text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#3d4f6e">100</text>
+
+  <!-- Scale: 100 units = 145px. Y_base=200. bar_y = 200 - val*1.45 -->
+  <!-- Bar width=36, gap=16, group_width=88+16=104, start=88 -->
+
+  <!-- Helper: onto bar opacity .9, dt bar opacity .65, gap bar opacity .4 -->
+  <!-- Values: TOGAF onto=91.7 dt=64.2; COBIT onto=84.3 dt=84.3; NIST onto=77.5 dt=77.5
+               AI onto=87.2 dt=74.1; BC onto=76.2 dt=64.8; OD onto=83.4 dt=83.4
+               SEC onto=87.6 dt=87.6; INTEROP onto=86.3 dt=86.3; LEGALTECH onto=69.1 dt=41.5 -->
+
+  <!-- TOGAF  x=88 -->
+  <g class="b1">
+    <rect x="90"  y="67"  width="30" height="133" rx="3" fill="url(#g-togaf)" opacity=".85"/>
+    <rect x="123" y="107" width="30" height="93"  rx="3" fill="url(#g-togaf)" opacity=".45"/>
+    <rect x="156" y="160" width="16" height="40"  rx="2" fill="#ff4d6d" opacity=".5"/>
+  </g>
+
+  <!-- COBIT  x=192 -->
+  <g class="b2">
+    <rect x="194" y="78"  width="30" height="122" rx="3" fill="url(#g-cobit)" opacity=".85"/>
+    <rect x="227" y="78"  width="30" height="122" rx="3" fill="url(#g-cobit)" opacity=".45"/>
+    <rect x="260" y="199" width="16" height="1"   rx="1" fill="#10e98c" opacity=".6"/>
+  </g>
+
+  <!-- NIST  x=296 -->
+  <g class="b3">
+    <rect x="298" y="88"  width="30" height="112" rx="3" fill="url(#g-nist)" opacity=".85"/>
+    <rect x="331" y="88"  width="30" height="112" rx="3" fill="url(#g-nist)" opacity=".45"/>
+    <rect x="364" y="199" width="16" height="1"   rx="1" fill="#10e98c" opacity=".6"/>
+  </g>
+
+  <!-- AI  x=400 -->
+  <g class="b4">
+    <rect x="402" y="74"  width="30" height="126" rx="3" fill="url(#g-ai)" opacity=".85"/>
+    <rect x="435" y="93"  width="30" height="107" rx="3" fill="url(#g-ai)" opacity=".45"/>
+    <rect x="468" y="181" width="16" height="19"  rx="2" fill="#ff4d6d" opacity=".45"/>
+  </g>
+
+  <!-- BC  x=504 -->
+  <g class="b5">
+    <rect x="506" y="89"  width="30" height="111" rx="3" fill="url(#g-bc)" opacity=".85"/>
+    <rect x="539" y="106" width="30" height="94"  rx="3" fill="url(#g-bc)" opacity=".45"/>
+    <rect x="572" y="174" width="16" height="26"  rx="2" fill="#ff4d6d" opacity=".45"/>
+  </g>
+
+  <!-- OD  x=608 -->
+  <g class="b6">
+    <rect x="610" y="79"  width="30" height="121" rx="3" fill="url(#g-od)" opacity=".85"/>
+    <rect x="643" y="79"  width="30" height="121" rx="3" fill="url(#g-od)" opacity=".45"/>
+    <rect x="676" y="199" width="16" height="1"   rx="1" fill="#10e98c" opacity=".6"/>
+  </g>
+
+  <!-- SEC  x=712 -->
+  <g class="b7">
+    <rect x="714" y="73"  width="30" height="127" rx="3" fill="url(#g-sec)" opacity=".85"/>
+    <rect x="747" y="73"  width="30" height="127" rx="3" fill="url(#g-sec)" opacity=".45"/>
+    <rect x="780" y="199" width="16" height="1"   rx="1" fill="#10e98c" opacity=".6"/>
+  </g>
+
+  <!-- INTEROP  x=816 -->
+  <g class="b8">
+    <rect x="818" y="75"  width="30" height="125" rx="3" fill="url(#g-interop)" opacity=".85"/>
+    <rect x="851" y="75"  width="30" height="125" rx="3" fill="url(#g-interop)" opacity=".45"/>
+    <rect x="884" y="199" width="16" height="1"   rx="1" fill="#10e98c" opacity=".6"/>
+  </g>
+
+  <!-- LEGALTECH  x=920 — lower scores, gap visible -->
+  <g class="b9">
+    <rect x="922" y="100" width="30" height="100" rx="3" fill="url(#g-legaltech)" opacity=".85"/>
+    <rect x="955" y="140" width="30" height="60"  rx="3" fill="url(#g-legaltech)" opacity=".45"/>
+    <rect x="988" y="140" width="16" height="60"  rx="2" fill="#ff4d6d" opacity=".5"/>
+    <!-- NEW label -->
+    <rect x="918" y="88" width="88" height="14" rx="3" fill="#60a5fa" opacity=".08"/>
+    <text x="962" y="98" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#60a5fa">◄ NEW DIM</text>
+  </g>
+
+  <!-- X labels -->
+  <text x="122" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">TOGAF</text>
+  <text x="226" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">COBIT</text>
+  <text x="330" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">NIST</text>
+  <text x="434" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">AI</text>
+  <text x="538" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">BC</text>
+  <text x="642" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">OD</text>
+  <text x="746" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">SEC</text>
+  <text x="850" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7a8db0">INTEROP</text>
+  <text x="962" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#60a5fa">LEGALTECH</text>
+
+  <!-- Legend -->
+  <rect x="82"  y="236" width="14" height="10" rx="2" fill="#00e5ff" opacity=".8"/>
+  <text x="100" y="246" font-family="'Courier New',monospace" font-size="10" fill="#7a8db0">MALTG_onto score</text>
+  <rect x="230" y="236" width="14" height="10" rx="2" fill="#00e5ff" opacity=".4"/>
+  <text x="248" y="246" font-family="'Courier New',monospace" font-size="10" fill="#7a8db0">DT_arch score</text>
+  <rect x="358" y="236" width="14" height="10" rx="2" fill="#ff4d6d" opacity=".5"/>
+  <text x="376" y="246" font-family="'Courier New',monospace" font-size="10" fill="#7a8db0">GAP δ(d)</text>
+  <text x="730" y="246" font-family="'Courier New',monospace" font-size="10" fill="#3d4f6e">Overall: onto=82.6 · DT=73.7 · GAP=10.8%</text>
+
+  <!-- Bottom line -->
+  <rect x="0" y="273" width="1200" height="2" rx="1" fill="url(#bottom-line)" opacity=".4"/>
+</svg>

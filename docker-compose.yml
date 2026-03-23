@@ -1,0 +1,38 @@
+# ══════════════════════════════════════════════════════════
+#    MALTG StructuralDigitalTwin Validator — Docker Compose
+#  ► Edita ./data/MALTG_onto.owl  → Tab 02 se actualiza en 5s
+#  ► Edita ./data/dt_arch.json    → Tab 03 se actualiza en 5s
+# ══════════════════════════════════════════════════════════
+services:
+  sdt-maltg:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+    container_name: sdt-maltg-src
+    ports:
+      - "8080:8080"
+    volumes:
+      # Data files mounted as volumes → edit on host, instant effect
+      - ./data:/data:ro
+      # Frontend mounted too → edit HTML without rebuild
+      - ./src/frontend:/frontend:ro
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8080/api/health')"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    labels:
+      - "com.maltg.version=2.4.0"
+      - "com.maltg.description=MALTG Architecture Validator"
+      - "com.maltg.owl=MALTG_onto.owl"
+      - "com.maltg.dt=dt_arch.json"
+
+networks:
+  default:
+    name: maltg-net
+    driver: bridge

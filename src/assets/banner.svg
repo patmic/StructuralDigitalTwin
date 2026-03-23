@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+  <defs>
+    <style>
+      @keyframes pulse-core  { 0%,100%{opacity:.95;r:5} 50%{opacity:.4;r:3.5} }
+      @keyframes glow-ring   { 0%,100%{opacity:.7} 50%{opacity:.25} }
+      @keyframes glow-hex    { 0%,100%{filter:drop-shadow(0 0 8px #00e5ff88)} 50%{filter:drop-shadow(0 0 18px #00e5ffcc)} }
+      @keyframes scan-line   { 0%{transform:translateX(-200px);opacity:.6} 85%{opacity:.6} 100%{transform:translateX(1400px);opacity:0} }
+      @keyframes fade-in-up  { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes dot-blink   { 0%,100%{opacity:1} 50%{opacity:.2} }
+      @keyframes layer-slide { from{transform:translateX(24px);opacity:0} to{transform:translateX(0);opacity:1} }
+
+      .core-dot  { animation: pulse-core  2.4s ease-in-out infinite }
+      .hex-outer { animation: glow-ring   3s ease-in-out infinite }
+      .hex-grp   { animation: glow-hex    3s ease-in-out infinite }
+      .scanline  { animation: scan-line   6s linear infinite }
+      .title     { animation: fade-in-up  .8s ease forwards }
+      .sub       { animation: fade-in-up  1s ease .15s both }
+      .desc      { animation: fade-in-up  1s ease .3s both }
+      .dot-live  { animation: dot-blink   1.4s ease-in-out infinite }
+      .l1{ animation: layer-slide .7s ease .1s both }
+      .l2{ animation: layer-slide .7s ease .2s both }
+      .l3{ animation: layer-slide .7s ease .3s both }
+      .l4{ animation: layer-slide .7s ease .4s both }
+      .l5{ animation: layer-slide .7s ease .5s both }
+    </style>
+
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#04060f"/>
+      <stop offset="50%"  stop-color="#070c1a"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+
+    <!-- Cyan glow gradient for hex logo -->
+    <radialGradient id="hex-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00e5ff" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title shimmer gradient -->
+    <linearGradient id="title-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00e5ff"/>
+      <stop offset="40%"  stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <!-- Layer stack gradient -->
+    <linearGradient id="layer-legaltech" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="layer-tech" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#10e98c"/>
+    </linearGradient>
+    <linearGradient id="layer-foundation" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#ffc947"/>
+    </linearGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#00e5ff" stroke-width=".4" opacity=".06"/>
+    </pattern>
+
+    <!-- Bottom accent gradient -->
+    <linearGradient id="bottom-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#050810"/>
+      <stop offset="20%"  stop-color="#00e5ff"/>
+      <stop offset="50%"  stop-color="#60a5fa"/>
+      <stop offset="80%"  stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+
+    <!-- Clip path -->
+    <clipPath id="clip-main">
+      <rect width="1200" height="340"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#grid)"/>
+
+  <!-- Scanline effect -->
+  <rect class="scanline" y="0" width="180" height="340" fill="url(#title-grad)" opacity=".03" rx="2"/>
+
+  <!-- ═══ LEFT: MALTG HEX LOGO ════════════════════════════════════ -->
+  <!-- Glow halo behind hex -->
+  <circle cx="158" cy="170" r="95" fill="url(#hex-glow)"/>
+
+  <g class="hex-grp" transform="translate(158,170)">
+    <!-- Outer hexagon -->
+    <polygon class="hex-outer" points="0,-72 62.4,-36 62.4,36 0,72 -62.4,36 -62.4,-36"
+      fill="none" stroke="#00e5ff" stroke-width="1.6" opacity=".65"/>
+
+    <!-- Mid hexagon -->
+    <polygon points="0,-52 45,-26 45,26 0,52 -45,26 -45,-26"
+      fill="none" stroke="#00e5ff" stroke-width="1" opacity=".3"/>
+
+    <!-- Inner hexagon -->
+    <polygon points="0,-32 27.7,-16 27.7,16 0,32 -27.7,16 -27.7,-16"
+      fill="none" stroke="#60a5fa" stroke-width="1" opacity=".35"/>
+
+    <!-- Spoke lines outer→mid -->
+    <line x1="0"  y1="-72" x2="0"  y2="-52" stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <line x1="0"  y1="72"  x2="0"  y2="52"  stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <line x1="62.4" y1="-36" x2="45" y2="-26" stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <line x1="62.4" y1="36"  x2="45" y2="26"  stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <line x1="-62.4" y1="-36" x2="-45" y2="-26" stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <line x1="-62.4" y1="36"  x2="-45" y2="26"  stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+
+    <!-- Corner glow dots on outer hex -->
+    <circle cx="0"    cy="-72" r="3.5" fill="#00e5ff" opacity=".8"/>
+    <circle cx="62.4" cy="-36" r="3.5" fill="#00e5ff" opacity=".8"/>
+    <circle cx="62.4" cy="36"  r="3.5" fill="#00e5ff" opacity=".8"/>
+    <circle cx="0"    cy="72"  r="3.5" fill="#00e5ff" opacity=".8"/>
+    <circle cx="-62.4" cy="-36" r="3.5" fill="#00e5ff" opacity=".8"/>
+    <circle cx="-62.4" cy="36"  r="3.5" fill="#00e5ff" opacity=".8"/>
+
+    <!-- Inner fill hex (subtle) -->
+    <polygon points="0,-32 27.7,-16 27.7,16 0,32 -27.7,16 -27.7,-16"
+      fill="#00e5ff" opacity=".04"/>
+
+    <!-- Center core dot (animated pulse) -->
+    <circle class="core-dot" cx="0" cy="0" r="5" fill="#00e5ff" opacity=".95"/>
+    <circle cx="0" cy="0" r="10" fill="#00e5ff" opacity=".08"/>
+    <circle cx="0" cy="0" r="16" fill="#00e5ff" opacity=".04"/>
+  </g>
+
+  <!-- ═══ CENTER: TITLE BLOCK ══════════════════════════════════════ -->
+
+  <!-- MALTG main title -->
+  <text class="title" x="295" y="125"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="78" font-weight="900" letter-spacing="12"
+    fill="url(#title-grad)">MALTG</text>
+
+  <!-- Version badge inline -->
+  <rect x="295" y="136" width="160" height="22" rx="4" fill="#00e5ff" opacity=".1"/>
+  <rect x="295" y="136" width="160" height="22" rx="4" fill="none" stroke="#00e5ff" stroke-width=".8" opacity=".4"/>
+  <text x="302" y="152"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" fill="#00e5ff" opacity=".9" letter-spacing="1">v3.0.0 · LegalTech Edition</text>
+
+  <!-- Live indicator dot -->
+  <circle class="dot-live" cx="471" cy="147" r="4" fill="#10e98c"/>
+  <text x="479" y="152"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" fill="#10e98c" opacity=".9" letter-spacing="1">ACTIVE</text>
+
+  <!-- Subtitle line 1 -->
+  <text class="sub" x="295" y="192"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="21" font-weight="700" fill="#e8f0ff" letter-spacing="1" opacity=".95">
+    Digital Twin–Based Validation of LegalTech
+  </text>
+
+  <!-- Subtitle line 2 -->
+  <text class="sub" x="295" y="218"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="21" font-weight="700" fill="#e8f0ff" letter-spacing="1" opacity=".95">
+    Governance Ontology for Integrated Enterprise Standards
+  </text>
+
+  <!-- Description -->
+  <text class="desc" x="296" y="252"
+    font-family="'Courier New', Courier, monospace"
+    font-size="13" fill="#7a8db0" letter-spacing=".5">
+    54 OWL classes  ·  39 Digital Twin services  ·  9 validation dimensions  ·  TOGAF · COBIT · NIST · GDPR · eIDAS
+  </text>
+
+  <!-- Target journal -->
+  <rect x="296" y="270" width="290" height="22" rx="4" fill="#ffc947" opacity=".07"/>
+  <rect x="296" y="270" width="290" height="22" rx="4" fill="none" stroke="#ffc947" stroke-width=".8" opacity=".35"/>
+  <text x="303" y="286"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" fill="#ffc947" opacity=".9" letter-spacing=".5">
+    TARGET → Knowledge-Based Systems (Elsevier) · Q1 · IF 8.8
+  </text>
+
+  <!-- DOI placeholder badge -->
+  <rect x="600" y="270" width="180" height="22" rx="4" fill="#60a5fa" opacity=".07"/>
+  <rect x="600" y="270" width="180" height="22" rx="4" fill="none" stroke="#60a5fa" stroke-width=".8" opacity=".3"/>
+  <text x="607" y="286"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" fill="#60a5fa" opacity=".85" letter-spacing=".5">DOI · 10.5281/zenodo.XXXXX</text>
+
+  <!-- ═══ RIGHT: LAYER STACK VISUALIZATION ══════════════════════════ -->
+  <!-- Layer stack labels -->
+  <text x="855" y="88" font-family="'Courier New', Courier, monospace"
+    font-size="10" fill="#3d4f6e" letter-spacing="2" text-anchor="middle">ARCHITECTURE LAYERS</text>
+
+  <!-- Layer 5 — LegalTech Domain -->
+  <g class="l5">
+    <rect x="750" y="100" width="210" height="32" rx="5" fill="url(#layer-legaltech)" opacity=".15"/>
+    <rect x="750" y="100" width="210" height="32" rx="5" fill="none" stroke="#60a5fa" stroke-width="1.2" opacity=".6"/>
+    <rect x="750" y="100" width="4"   height="32" rx="2" fill="#60a5fa"/>
+    <text x="763" y="114" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#60a5fa" letter-spacing="1">LEGALTECH DOMAIN LAYER</text>
+    <text x="763" y="126" font-family="'Courier New',monospace" font-size="8.5" fill="#7a8db0">GDPR · eIDAS · NIS2 · Smart Contracts</text>
+    <circle cx="945" cy="116" r="3.5" fill="#60a5fa" opacity=".7"/>
+  </g>
+
+  <!-- Layer 4 — Technology Integration -->
+  <g class="l4">
+    <rect x="750" y="142" width="210" height="32" rx="5" fill="url(#layer-tech)" opacity=".12"/>
+    <rect x="750" y="142" width="210" height="32" rx="5" fill="none" stroke="#a855f7" stroke-width="1.2" opacity=".55"/>
+    <rect x="750" y="142" width="4"   height="32" rx="2" fill="#a855f7"/>
+    <text x="763" y="156" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#a855f7" letter-spacing="1">TECHNOLOGY INTEGRATION</text>
+    <text x="763" y="168" font-family="'Courier New',monospace" font-size="8.5" fill="#7a8db0">AI · Blockchain · Open Data · Security</text>
+    <circle cx="945" cy="158" r="3.5" fill="#a855f7" opacity=".7"/>
+  </g>
+
+  <!-- Layer 3 — Foundation -->
+  <g class="l3">
+    <rect x="750" y="184" width="210" height="32" rx="5" fill="url(#layer-foundation)" opacity=".1"/>
+    <rect x="750" y="184" width="210" height="32" rx="5" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity=".5"/>
+    <rect x="750" y="184" width="4"   height="32" rx="2" fill="#00e5ff"/>
+    <text x="763" y="198" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#00e5ff" letter-spacing="1">FOUNDATION LAYER</text>
+    <text x="763" y="210" font-family="'Courier New',monospace" font-size="8.5" fill="#7a8db0">TOGAF 9.2 · COBIT 5 · NIST CSF 1.1</text>
+    <circle cx="945" cy="200" r="3.5" fill="#00e5ff" opacity=".7"/>
+  </g>
+
+  <!-- Layer 2 — Digital Twin -->
+  <g class="l2">
+    <rect x="750" y="226" width="210" height="32" rx="5" fill="#a855f7" opacity=".07"/>
+    <rect x="750" y="226" width="210" height="32" rx="5" fill="none" stroke="#a855f7" stroke-width="1" opacity=".4"/>
+    <rect x="750" y="226" width="4"   height="32" rx="2" fill="#a855f7"/>
+    <text x="763" y="240" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#a855f7" letter-spacing="1">STRUCTURAL DIGITAL TWIN</text>
+    <text x="763" y="252" font-family="'Courier New',monospace" font-size="8.5" fill="#7a8db0">39 microservices · dt_arch.json</text>
+    <circle cx="945" cy="242" r="3.5" fill="#a855f7" opacity=".7"/>
+  </g>
+
+  <!-- Layer 1 — Validation Engine -->
+  <g class="l1">
+    <rect x="750" y="268" width="210" height="32" rx="5" fill="#10e98c" opacity=".06"/>
+    <rect x="750" y="268" width="210" height="32" rx="5" fill="none" stroke="#10e98c" stroke-width="1" opacity=".4"/>
+    <rect x="750" y="268" width="4"   height="32" rx="2" fill="#10e98c"/>
+    <text x="763" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#10e98c" letter-spacing="1">VALIDATION ENGINE Ψ/δ</text>
+    <text x="763" y="294" font-family="'Courier New',monospace" font-size="8.5" fill="#7a8db0">9-dim · HCS · LDCC · MDGA</text>
+    <circle cx="945" cy="284" r="3.5" fill="#10e98c" opacity=".7"/>
+  </g>
+
+  <!-- Connector line between layers -->
+  <line x1="970" y1="132" x2="970" y2="300" stroke="#1a2744" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="970" cy="116" r="2" fill="#60a5fa" opacity=".5"/>
+  <circle cx="970" cy="158" r="2" fill="#a855f7" opacity=".5"/>
+  <circle cx="970" cy="200" r="2" fill="#00e5ff" opacity=".5"/>
+  <circle cx="970" cy="242" r="2" fill="#a855f7" opacity=".5"/>
+  <circle cx="970" cy="284" r="2" fill="#10e98c" opacity=".5"/>
+
+  <!-- Divider line between center and right -->
+  <line x1="730" y1="80" x2="730" y2="310" stroke="#1a2744" stroke-width=".8" opacity=".6"/>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="333" width="1200" height="3" rx="1.5" fill="url(#bottom-line)"/>
+
+  <!-- Footer credits -->
+  <text x="600" y="325" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10" fill="#3d4f6e" letter-spacing="2" opacity=".7">
+    MALTG Architecture Validator · FastAPI · D3.js · Chart.js · OWL 2 · Docker
+  </text>
+</svg>

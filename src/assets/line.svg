@@ -1,0 +1,32 @@
+<svg width="100%" viewBox="0 0 1200 6" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Base line: dark, always visible -->
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#1e3a5f" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#1e3a5f" stop-opacity="0.5"/>
+      <stop offset="85%"  stop-color="#1e3a5f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Sweep glow: bright pulse traveling right→left -->
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#7dd3fc" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Static base line -->
+  <rect x="0" y="2" width="1200" height="1.5" rx="0.75" fill="url(#base)"/>
+
+  <!-- Animated sweep: a 400px wide glow rect sliding from right to left -->
+  <rect y="0" width="400" height="6" rx="3" fill="url(#glow)" opacity="0.9">
+    <animate attributeName="x"
+      from="1200" to="-400"
+      dur="3s"
+      repeatCount="indefinite"
+      calcMode="linear"/>
+  </rect>
+</svg>
