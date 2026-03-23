@@ -2,19 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=60&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional&fontSize=27&fontColor=475569&fontAlignY=80&animation=twinkling" width="100%"/>
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=44&text=LegalTech%20Governance%20Architecture%20Ontology&fontSize=26&fontColor=475569&fontAlignY=60&animation=twinkling" width="100%"/>
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=⬢%20⇄%20⬡%20⇄%20🕸️&fontSize=30&fontColor=666&fontAlignY=55&animation=twinkling" width="100%"/>
-
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=9000&pause=9000&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=▲%20→%20∆%20⇄%20🕸️" alt="MALTG v3"/>
 <img src="src/assets/line.svg" width="100%"/>
 
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=800&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=MALTG+v3" alt="MALTG v3"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=1000&color=1e3a5f&center=true&vCenter=true&width=860&height=40&lines=Multi-Layer+LegalTech+Governance+Ontology;Structural+Digital+Twin+Validation;TOGAF+%C2%B7+COBIT+%C2%B7+NIST+%C2%B7+GDPR+%C2%B7+eIDAS+%C2%B7+NIS2;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
-
-</div>
-<br/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=Multi-Layer+LegalTech+Governance+Ontology;Structural+Digital+Twin+Validation;TOGAF+%C2%B7+COBIT+%C2%B7+NIST+%C2%B7+GDPR+%C2%B7+eIDAS+%C2%B7+NIS2;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
-<img src="assets/line.svg" width="100%"/>
 <br/>
 
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
@@ -26,6 +16,12 @@
 <a href="data/dt_arch.json"><img src="https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
 <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
 
+<img src="src/assets/line.svg" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=1000&color=1e3a5f&center=true&vCenter=true&width=860&height=40&lines=Multi-Layer+LegalTech+Governance+Ontology;Structural+Digital+Twin+Validation;TOGAF+%C2%B7+COBIT+%C2%B7+NIST+%C2%B7+GDPR+%C2%B7+eIDAS+%C2%B7+NIS2;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
+
+</div>
+<br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=Multi-Layer+LegalTech+Governance+Ontology;Structural+Digital+Twin+Validation;TOGAF+%C2%B7+COBIT+%C2%B7+NIST+%C2%B7+GDPR+%C2%B7+eIDAS+%C2%B7+NIS2;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
 <br/>
 
 <a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>

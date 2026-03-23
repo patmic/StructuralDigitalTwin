@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════
-#    MALTG StructuralDigitalTwin Validator — Docker Compose
+#    MALTG StructuralDigitalTwin(∆) Validator — DockerCompose
 #  ► Edita ./data/MALTG_onto.owl  → Tab 02 se actualiza en 5s
 #  ► Edita ./data/dt_arch.json    → Tab 03 se actualiza en 5s
 # ══════════════════════════════════════════════════════════
