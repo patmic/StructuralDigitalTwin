@@ -6,6 +6,8 @@
 <img src="src/assets/line.svg" width="100%"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=800&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=▲%20→%20∆%20⇄%20🕸️" alt="MALTG v3"/>
 <br/>
+▲ → ∆ ⇄ 🕸️
+
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="▲ → ∆ ⇄ 🕸️"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=800&color=0f172a&center=true&vCenter=true&width=860&height=120&lines=▲;%20→;%20∆;%20⇄;%20🕸️" alt="MALTG v3"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=⬢+⇄+⬡+⇄+🕸️" alt="Typing SVG"/>
