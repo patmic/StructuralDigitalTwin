@@ -2,8 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=60&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional&fontSize=27&fontColor=475569&fontAlignY=80&animation=twinkling" width="100%"/>
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=44&text=LegalTech%20Governance%20Architecture%20Ontology&fontSize=26&fontColor=475569&fontAlignY=60&animation=twinkling" width="100%"/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=9000&pause=9000&color=0f172a&center=true&vCenter=true&width=860&height=60&lines=a%20→%20b%20⇄%20🕸️" alt="MALTG v3"/>
-# ▲ → ∆ ⇄ 🕸️
+▲ → ∆ ⇄ 🕸️
 <img src="src/assets/line.svg" width="100%"/>
 ⬢+⇄+⬡+⇄+🕸️
 <br/>
