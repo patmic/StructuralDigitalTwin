@@ -16,16 +16,18 @@
   <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 </div>
 
----
-```
-**Reviewer Quick-Start Map:**
+<div align="left">
+  <sub> <b>Reviewer Quick-Start Map: </b></sub>
 
-  🔬 "I want the theory"       →  Formal Model
-  ⚗️  "I want to reproduce"    →  3-Command Replication
-  📊 "I want the numbers"      →  Validation Results
-  🧩 "I want to extend it"     →  Extend the Experiment
-  📚 "I want the paper draft"  →  Academic Contribution
+```C
+    "I want the theory"       →  Formal Model
+    "I want to reproduce"     →  3-Command Replication
+    "I want the numbers"      →  Validation Results
+    "I want to extend it"     →  Extend the Experiment
+    "I want the paper draft"  →  Academic Contribution
 ```
+</div>
+
 ---
 <div align="center">
 
