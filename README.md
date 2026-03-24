@@ -1,21 +1,31 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=666&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
-<br/>
-<sub>
-  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
-  <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
-</sub>
-
-<a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
-<a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-<a href="data/dt_arch.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
-<a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
-<img src="src/assets/line.svg" width="100%"/>
-<img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
-
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=666&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
+  <br/>
+  <sub>
+    A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
+    <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
+  </sub>
+  <br/>
+  <br/>
+  <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
+  <a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
+  <a href="data/dt_arch.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+  <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
+  <img src="src/assets/line.svg" width="100%"/>
+  <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 </div>
 
+---
+```
+**Reviewer Quick-Start Map:**
+
+  🔬 "I want the theory"       →  Formal Model
+  ⚗️  "I want to reproduce"    →  3-Command Replication
+  📊 "I want the numbers"      →  Validation Results
+  🧩 "I want to extend it"     →  Extend the Experiment
+  📚 "I want the paper draft"  →  Academic Contribution
+```
 ---
 <div align="center">
 
@@ -491,21 +501,7 @@ pytest evaluation/test_scoring.py -v
 
 
 
----
 
-## 🗺️ Reviewer Quick-Start Map
-
-```
-You are a reviewer. Pick your path:
-
-  🔬 "I want the theory"       →  § Formal Model
-  ⚗️  "I want to reproduce"     →  § 3-Command Replication
-  📊 "I want the numbers"      →  § Validation Results
-  🧩 "I want to extend it"     →  § Extend the Experiment
-  📚 "I want the paper draft"  →  § Academic Contribution
-```
-
----
 
 ## 🏗️ Architecture Overview
 
