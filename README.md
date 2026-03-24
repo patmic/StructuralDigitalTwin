@@ -1,12 +1,8 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&reversal=false&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=43" width="100%"/> 
-
-<img src="https://capsule-render.vercel.app/api?type=venom&height=40&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional&fontSize=27&fontColor=475569&fontAlignY=80&animation=twinkling" width="100%"/>
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=44&text=LegalTech%20Governance%20Architecture%20Ontology&fontSize=26&fontColor=475569&fontAlignY=60&animation=twinkling" width="100%"/>
-▲ → ∆ ⇄ 🕸️
-<img src="src/src/assets/line.svg" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=130&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=555666&fontAlign=50&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=40" width="100%"/> 
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=75&color=gradient&text=⬢%20⇄%20⬡%20⇄%20🕸️&reversal=false&textBg=false&fontColor=475569&fontAlign=58&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=43" width="40%"/>
+<img src="src/assets/line.svg" width="100%"/>
  
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=⬢%20⇄%20⬡%20⇄%20🕸️" alt="Typing SVG"/>
  
 
