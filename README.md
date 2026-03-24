@@ -1,25 +1,28 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=venom&height=130&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=555666&fontAlign=50&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=40" width="100%"/> 
+<img src="https://capsule-render.vercel.app/api?type=venom&height=130&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=666&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF;+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission+%C2%B7+NIS2+ENISA;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
+<br/>
+<sub>
+  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
+  <a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF--00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
+  <a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT--ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
+  <a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
+  <a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
+  <a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
+  compliance.
+  <!-- <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance. -->
+</sub>
 <img src="src/assets/line.svg" width="100%"/>
 
-<a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF--00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
-<a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT--ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
-<a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
-<a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
-<a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
 
 </div>
 
 ---
 <div align="center">
 
-<br/><br/>
-
 <sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
-<sub>TOGAF® · COBIT® ISACA · NIST CSF · GDPR EUR-Lex · eIDAS EU Commission · NIS2 ENISA</sub>
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF;+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission+%C2%B7+NIS2+ENISA;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
 </div>
 
 ---
@@ -42,8 +45,7 @@ rutas>>
 
 <br/><br/>
 
-> **Structural Digital Twin–Driven Validation for a Multidimensional LegalTech Governance Architecture (MALTG) Ontology** is a multi-layer governance ontology **(OWL 2)** and live-validation dashboard that measures conformance between a formal enterprise standard reference (`MALTG_onto.owl`) and a structural digital twin of an actual LegalTech implementation (`dt_arch.json`).
-> Integrates **TOGAF 9.2 · COBIT 5 · NIST CSF 1.1 · GDPR · eIDAS · NIS2** in a single, formally defined, automatically scored architecture.
+
 
 </div>
 
@@ -496,7 +498,7 @@ pytest evaluation/test_scoring.py -v
 
 ## 🎯 One-Sentence Pitch
 
-> **MALTG** is the first formally verified system that connects an **OWL 2 governance ontology** to a **live microservice Digital Twin** and automatically measures — in milliseconds — how far your LegalTech enterprise is from full **TOGAF · COBIT · NIST · GDPR · eIDAS · NIS2** compliance.
+
 
 ---
 
