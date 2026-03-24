@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=666&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=000&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
+
   <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
   <br/>
   A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
@@ -14,11 +15,11 @@
   <br/>
 </div>
 
-> **Multidimensional LegalTech Governance Architecture - Overview**
-
+![Multidimensional LegalTech Governance Architecture - Overview](https://img.shields.io/badge/Multidimensional%20LegalTech%20Governance%20Architecture%20--%20Overview-blue)
 
 <div align="center">
-  <b> Multidimensional LegalTech Governance Architecture - Overview </b>
+  <br/><br/>
+  <span style="color:rgb(6, 111, 160)"><b> Multidimensional LegalTech Governance Architecture - Overview </b></span>
   <br/><br/>
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <br/><br/>
@@ -29,9 +30,6 @@
     Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
   </sub>
 </div>
-
-
-    ![MALTG architecture — 39 services across 8 layers plus LegalTech Domain strip](src/assets/MALTG.png)
 
 ---
 
@@ -46,6 +44,7 @@
     "I want the paper draft"  →  Academic Contribution
 ```
 </div>
+![MALTG architecture — 39 services across 8 layers plus LegalTech Domain strip](src/assets/MALTG.png)
 
 <div align="center">
 
