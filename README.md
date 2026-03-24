@@ -16,25 +16,25 @@
 </div>
 
 <div align="center">
+  <br/>
+  <b>MALTG Overview</b>
+  <br/>
+  <b> Multidimensional LegalTech Governance Architecture -  </b>
   <br/><br/>
-  <b>MALTG</b>
-  <br/>
-  <b> Multidimensional LegalTech Governance Architecture - Overview </b>
-  <br/>
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <br/><br/>
   <sub> 
-    The system has **8 vertical architectural layers** 
-    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal **LegalTech Domain Layer** — the novel v3 contribution. 
+    The system has <b>8 vertical architectural layers</b> 
+    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal <b>LegalTech Domain Layer</b> — the novel v3 contribution. 
     Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
-    Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
+    Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
   </sub>
 </div>
 
 <br/>
 <div align="left">
 
-![Multidimensional LegalTech Governance Architecture - Overview](https://img.shields.io/badge/Quick%20Start%20Map-blue)
+![Quick Start Map](https://img.shields.io/badge/Quick%20Start%20Map-blue)
 ```C
     "I want the theory"       →  Formal Model
     "I want to reproduce"     →  Command Replication
@@ -44,13 +44,7 @@
 ```
 </div>
 
-  <sub> <b> <h3> Quick-Start Map: </h3></b></sub>
-
-
-![MALTG architecture — 39 services across 8 layers plus LegalTech Domain strip](src/assets/MALTG.png)
-
 <div align="center">
-
 <sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission" alt="Typing SVG"/> compliance.
 </div>
