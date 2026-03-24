@@ -17,7 +17,7 @@
 </div>
 
 <div align="left">
-  <sub> <b>Reviewer Quick-Start Map: </b></sub>
+  <sub> <b> <h3> Quick-Start Map: </h3></b></sub>
 
 ```C
     "I want the theory"       →  Formal Model
