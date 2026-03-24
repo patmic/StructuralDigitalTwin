@@ -1,11 +1,9 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=666&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
   <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
-  <br/>
-  <sub>
-    A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
-    <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
-  </sub>
+  
+  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
+
   <br/><br/>
   <b> Multidimensional LegalTech Governance Architecture - Overview </b>
   <br/><br/>
@@ -21,7 +19,7 @@
     Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
     Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
 
-    
+
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <img src="src/assets/line.svg" height="5px" width="100%"/>
   <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
