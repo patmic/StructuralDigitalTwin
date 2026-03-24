@@ -6,10 +6,10 @@
   A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
   <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
 </sub>
-<img src="src/assets/line.svg" width="100%"/>
-<a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0--MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
-<a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-<a href="data/dt_arch.json"><img src="https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+
+<a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
+<a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
+<a href="data/dt_arch.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
 <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
 <img src="src/assets/line.svg" width="100%"/>
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
