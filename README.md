@@ -6,6 +6,8 @@
 <img src="src/assets/line.svg" width="100%"/>
 
 <br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=⬢%20⇄%20⬡%20⇄%20🕸️" alt="Typing SVG"/>
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=⬢%20⇄%20⬡%20⇄%20🕸️&fontSize=30&fontColor=666&fontAlignY=55&animation=twinkling" width="100%"/>
 
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 
