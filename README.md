@@ -7,6 +7,21 @@
     <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
   </sub>
   <br/><br/>
+  <b> Multidimensional LegalTech Governance Architecture - Overview </b>
+  <br/><br/>
+  <sub> 
+    The system has **8 vertical architectural layers** 
+    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal **LegalTech Domain Layer** — the novel v3 contribution. 
+    Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
+    Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
+  </sub>
+
+  The system has **8 vertical architectural layers** 
+    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal **LegalTech Domain Layer** — the novel v3 contribution. 
+    Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
+    Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
+
+    
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <img src="src/assets/line.svg" height="5px" width="100%"/>
   <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
@@ -15,17 +30,7 @@
   <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
   <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
   
-  <sub> 
-    <b> Architecture Overview </b><br>
-    
 
-    The system has **8 vertical architectural layers** 
-    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal **LegalTech Domain Layer** — the novel v3 contribution. 
-    Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
-    Dashed-red boxes indicate **governance gaps** (concepts defined in Ω but absent from Δ).
-
-    
-   </sub>
    
 </div>
 
