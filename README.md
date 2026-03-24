@@ -1,6 +1,7 @@
-<div align="center"><br/>
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&reversal=false&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=43" width="100%"/> 
 
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=60&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional&fontSize=27&fontColor=475569&fontAlignY=80&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=40&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional&fontSize=27&fontColor=475569&fontAlignY=80&animation=twinkling" width="100%"/>
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=44&text=LegalTech%20Governance%20Architecture%20Ontology&fontSize=26&fontColor=475569&fontAlignY=60&animation=twinkling" width="100%"/>
 ▲ → ∆ ⇄ 🕸️
 <img src="src/src/assets/line.svg" width="100%"/>
