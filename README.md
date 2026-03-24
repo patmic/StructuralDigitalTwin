@@ -3,11 +3,16 @@
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
 <br/>
 <sub>
-  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission" alt="Typing SVG"/> compliance.
-  <!-- <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance. -->
+  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full 
+  <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
 </sub>
 <img src="src/assets/line.svg" width="100%"/>
-
+<a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0--MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
+<a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
+<a href="data/dt_arch.json"><img src="https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+<a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
+<img src="src/assets/line.svg" width="100%"/>
+<img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 
 </div>
 
@@ -15,8 +20,7 @@
 <div align="center">
 
 <sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF;+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission+%C2%B7+NIS2+ENISA;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission" alt="Typing SVG"/> compliance.
 </div>
 
 ---
@@ -25,17 +29,6 @@
   <a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
   <a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
   <a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
-rutas>>
-<a href="https://github.com"><img src="https://img.shields.io/badge/version-3.0.0--legaltech-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
-<a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-<a href="data/dt_arch.json"><img src="https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
-<a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
-<img src="src/assets/line.svg" width="100%"/>
-<img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
-<br/>
-
-<br/>
-
 <a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>
 <a href="https://www.sciencedirect.com/journal/knowledge-based-systems"><img src="https://img.shields.io/badge/KBS_Q1-IF_8.8-ff9a3c?style=for-the-badge&labelColor=0d1117" alt="Target"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
