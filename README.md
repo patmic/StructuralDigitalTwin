@@ -5,7 +5,34 @@
 ▲ → ∆ ⇄ 🕸️
 <img src="src/assets/line.svg" width="100%"/>
  
- 
+ <div class="experience__action-item text-center color-bg-default mt-7 mt-md-8">
+      <h3 class="mt-1">
+        <div class="h4 f6 text-normal color-fg-muted text-mono">
+          ACTION ITEM
+        </div>
+
+        Intro to GitHub
+      </h3>
+
+
+        <p class="mt-4 f4">
+            Learn the basics of GitHub flow in order to collaborate on projects.
+        </p>
+
+        <div class="experience__cta mt-4 mb-4 d-flex flex-wrap flex-justify-center">
+            <a href="https://github.com/github-education-experiences/introduction-to-github" data-view-component="true" class="Button--primary Button--large Button">  <span class="Button-content">
+    <span class="Button-label">Start the course</span>
+      <span class="Button-visual Button-trailingVisual">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-right">
+    <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+      </span>
+  </span>
+</a>
+
+        </div>
+    </div>
+    
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=⬢%20⇄%20⬡%20⇄%20🕸️" alt="Typing SVG"/>
  
 
