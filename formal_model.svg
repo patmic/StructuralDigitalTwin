@@ -1,0 +1,97 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#060d1f"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="arrC" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00e5ff"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="200" rx="10" fill="url(#bg)" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- Section label -->
+  <text x="450" y="22" text-anchor="middle"
+    font-family="monospace" font-size="11" fill="#475569" letter-spacing="2">
+    MALTG FORMAL MODEL  —  5-PHASE VALIDATION PIPELINE
+  </text>
+
+  <!-- ─── Phase boxes ─── -->
+
+  <!-- P1 · Ω -->
+  <rect x="14" y="36" width="148" height="120" rx="8"
+    fill="#003d4d" fill-opacity="0.55" stroke="#00e5ff" stroke-width="1.5"/>
+  <text x="88" y="66"  text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#00e5ff">Ω</text>
+  <text x="88" y="86"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#7dd3fc">Ontological</text>
+  <text x="88" y="99"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#7dd3fc">Reference</text>
+  <text x="88" y="116" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">54 classes · 15 props</text>
+  <text x="88" y="129" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">OWL 2 · RDF/XML</text>
+  <text x="88" y="148" text-anchor="middle" font-family="monospace" font-size="8"   fill="#00e5ff">P1 — ORE</text>
+
+  <!-- Arrow 1 -->
+  <line x1="163" y1="96" x2="192" y2="96" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="177" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#475569">parse</text>
+
+  <!-- P2 · Δ -->
+  <rect x="194" y="36" width="148" height="120" rx="8"
+    fill="#003d1a" fill-opacity="0.55" stroke="#10e98c" stroke-width="1.5"/>
+  <text x="268" y="66"  text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#10e98c">Δ</text>
+  <text x="268" y="86"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#6ee7b7">Structural</text>
+  <text x="268" y="99"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#6ee7b7">Digital Twin</text>
+  <text x="268" y="116" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">39 services · 54 edges</text>
+  <text x="268" y="129" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">G(V, E) directed graph</text>
+  <text x="268" y="148" text-anchor="middle" font-family="monospace" font-size="8"   fill="#10e98c">P2 — DTSM</text>
+
+  <!-- Arrow 2 -->
+  <line x1="343" y1="96" x2="372" y2="96" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="357" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#475569">align</text>
+
+  <!-- P3 · Γ -->
+  <rect x="374" y="36" width="148" height="120" rx="8"
+    fill="#2d0050" fill-opacity="0.55" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="448" y="66"  text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#a855f7">Γ</text>
+  <text x="448" y="86"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#c4b5fd">Conformance</text>
+  <text x="448" y="99"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#c4b5fd">Mapping</text>
+  <text x="448" y="116" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">Γ : C → 2^V</text>
+  <text x="448" y="129" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">via maltg_ref annots.</text>
+  <text x="448" y="148" text-anchor="middle" font-family="monospace" font-size="8"   fill="#a855f7">P3 — HCS</text>
+
+  <!-- Arrow 3 -->
+  <line x1="523" y1="96" x2="552" y2="96" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="537" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#475569">score</text>
+
+  <!-- P4 · Ψ -->
+  <rect x="554" y="36" width="148" height="120" rx="8"
+    fill="#3d2d00" fill-opacity="0.55" stroke="#ffc947" stroke-width="1.5"/>
+  <text x="628" y="66"  text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#ffc947">Ψ</text>
+  <text x="628" y="86"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#fde68a">Hierarchical</text>
+  <text x="628" y="99"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#fde68a">Coverage</text>
+  <text x="628" y="116" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">0.4·root + 0.6·subs</text>
+  <text x="628" y="129" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">∈ [0.0, 1.0]  4 props.</text>
+  <text x="628" y="148" text-anchor="middle" font-family="monospace" font-size="8"   fill="#ffc947">P4 — LDCC</text>
+
+  <!-- Arrow 4 (cyan = result arrow) -->
+  <line x1="703" y1="96" x2="732" y2="96" stroke="#00e5ff" stroke-width="2" marker-end="url(#arrC)"/>
+  <text x="717" y="90" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#00e5ff">gap</text>
+
+  <!-- P5 · δ -->
+  <rect x="734" y="36" width="150" height="120" rx="8"
+    fill="#3d0018" fill-opacity="0.65" stroke="#ff4d6d" stroke-width="2"/>
+  <text x="809" y="66"  text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#ff4d6d">δ</text>
+  <text x="809" y="86"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#fca5a5">Conformance</text>
+  <text x="809" y="99"  text-anchor="middle" font-family="monospace" font-size="9.5" fill="#fca5a5">Gap Metric</text>
+  <text x="809" y="116" text-anchor="middle" font-family="monospace" font-size="8"   fill="#475569">δ(d) = scoreΩ·(1−Ψ)</text>
+  <text x="809" y="129" text-anchor="middle" font-family="monospace" font-size="8"   fill="#ff4d6d">LegalTech δ = 27.6 ⚠</text>
+  <text x="809" y="148" text-anchor="middle" font-family="monospace" font-size="8"   fill="#ff4d6d">P5 — MDGA</text>
+
+  <!-- Bottom formula bar -->
+  <rect x="14" y="168" width="870" height="24" rx="5" fill="#0a1020"/>
+  <text x="450" y="183" text-anchor="middle"
+    font-family="monospace" font-size="9" fill="#64748b">
+    MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩   ·   Ψ(d) = 0.4·𝟙[rₐ∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)   ·   δ(d) = scoreΩ(d)·(1−Ψ(d))
+  </text>
+</svg>
