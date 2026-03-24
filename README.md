@@ -1,24 +1,38 @@
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=venom&height=130&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=555666&fontAlign=50&fontAlignY=44&animation=twinkling&descAlign=32&descAlignY=40" width="100%"/> 
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF;+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission+%C2%B7+NIS2+ENISA;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
 <img src="src/assets/line.svg" width="100%"/>
 
-<br/>
+<a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF--00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
+<a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT--ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
+<a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
+<a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
+<a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
 
+</div>
+
+---
+<div align="center">
+
+<br/><br/>
+
+<sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
+<sub>TOGAF® · COBIT® ISACA · NIST CSF · GDPR EUR-Lex · eIDAS EU Commission · NIS2 ENISA</sub>
+
+</div>
+
+---
+
+rutas>>
 <a href="https://github.com"><img src="https://img.shields.io/badge/version-3.0.0--legaltech-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
 <a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
 <a href="data/dt_arch.json"><img src="https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
 <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
-
 <img src="src/assets/line.svg" width="100%"/>
-
 <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
-
 <br/>
 
-</div>
-<br/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=Multi-Layer+LegalTech+Governance+Ontology;Structural+Digital+Twin+Validation;TOGAF+%C2%B7+COBIT+%C2%B7+NIST+%C2%B7+GDPR+%C2%B7+eIDAS+%C2%B7+NIS2;OWL+2+%C2%B7+FastAPI+%C2%B7+D3.js+%C2%B7+Docker" alt="Typing SVG"/>
 <br/>
 
 <a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>
@@ -456,21 +470,6 @@ pytest evaluation/test_scoring.py -v
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 
-<div align="center">
-
-<a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF-9.2-00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
-<a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT-5-ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
-<a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF-1.1-ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
-<a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
-<a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
-<a href="https://www.enisa.europa.eu"><img src="https://img.shields.io/badge/NIS2-2022%2F2555-60a5fa?style=for-the-badge&labelColor=0d1117" alt="NIS2"/></a>
-
-<br/><br/>
-
-<sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
-<sub>TOGAF® The Open Group · COBIT® ISACA · NIST CSF NIST (public domain) · GDPR EUR-Lex · eIDAS EU Commission · NIS2 ENISA</sub>
-
-</div>
 
 ---
 
