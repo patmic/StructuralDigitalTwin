@@ -40,25 +40,6 @@
 ```
 </div>
 
-<div align="center">
-<sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission" alt="Typing SVG"/> compliance.
-</div>
-
----
-<a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF--00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
-  <a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT--ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
-  <a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
-  <a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
-  <a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
-
-<a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>
-
-<a href="https://www.sciencedirect.com/journal/knowledge-based-systems"><img src="https://img.shields.io/badge/KBS_Q1-IF_8.8-ff9a3c?style=for-the-badge&labelColor=0d1117" alt="Target"/></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
-<a href="https://zenodo.org"><img src="https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117" alt="DOI"/></a>
-![Quick Start Map](https://img.shields.io/badge/Quick%20Start%20Map-blue)
----
 
 [![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=⬡+Architecture+Layers)]()
 <table>
@@ -112,8 +93,9 @@
   
   ![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
   **`MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
+
   <img src="https://img.shields.io/badge/Ω-MALTG_onto.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/> <img src="https://img.shields.io/badge/Δ-dt_arch.json-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Δ-maltg_ref-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Ψ-engine-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/δ-gap-00e5aa?style=flat-square&labelColor=0d1117"/>
-  
+
 </div>
 
 | Symbol | Formal Definition | Source |
@@ -170,29 +152,59 @@ OVERALL      73 / 82                              gap −8.9
 > **Top gaps:** `LEGALTECH` (−27.6) · `TOGAF` (−27.5) · `AI` (−13.1)
 
 ---
-# StructuralDigitalTwin
-Structural Digital Twin–Driven Validation for a Multidimensional LegalTech Governance Architecture Ontology
+![Project Structure](https://img.shields.io/badge/↓%20📂-blue)
 
-StructuralDigitalTwin
-├── docker-compose.yml
-├── data/
-|   ├── dt_arch.json
-|   └── MALTG_onto.owl
-└── src/
-    ├── backend/
-    │   ├── Dockerfile
-    │   ├── main.py
-    │   └── requirements.txt
-    └── frontend/
-        └── index.html
----
-## 🚀 Quick Start
+<details>
+<summary> <b> Repository </b>
+<br/>
+<img src="https://img.shields.io/badge/Structure-2496ed?style=for-the-badge&labelColor=0d1117&logo=wikibooks&logoColor=2496ed" alt="Code"/>
+</summary>
+
+
+```
+maltg/
+├── 📄  README.md
+├── 🐳  docker-compose.yml              ← single-command deploy, port 8080
+│
+├── 📁  data/                           ← ✏️  Edit here to update dashboard live
+│   ├── 🦉  MALTG_onto.owl              ← OWL 2 / RDF-XML  (54 classes, 15 props)
+│   └── 🔷  dt_arch.json                ← Digital Twin (39 services, 54 edges/connections)
+│
+├── 📁  src/
+├────── 📁  backend/
+│       ├── 🐍  main.py                     ← FastAPI · 5 endpoints · Ψ scoring engine
+│       ├── 📋  requirements.txt
+│       └── 🐳  Dockerfile                  ← python:3.12-slim
+│
+├────── 📁  frontend/
+│       └── 🌐  index.html                  ← SPA · 5 tabs · D3.js + Chart.js
+│
+├────── 📁  src/assets/
+│       ├── 🖼️   architecture.svg                 ← conformance_dashboard.svg
+│       ├── 🖼️   pipeline.svg
+│       ├── 🖼️   sensitivity.svg
+│       └── 🖼️   formal_model.svg
+│
+└── 📁  evaluation/                     ← academic replication package
+    ├── 📄  expert_survey.pdf
+    ├── 📊  responses_anonymized.csv
+    ├── 📓  analysis.ipynb
+    └── 🧪  test_scoring.py            ← bit-for-bit regression suite
+```
+
+</details>
+
+<details>
+<summary> <b> Project </b>
+<br/>
+<img src="https://img.shields.io/badge/Repository-2496ed?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=2496ed" alt="Code"/>
+</summary>
 
 ```bash
 # 1 · Clone repository
 git clone https://github.com/your-org/maltg && cd maltg
 
-# 2 · Launch  (requires Docker >= 20.10)
+# 2 · Launch  (requires Docker >= 20.10) · (Python 3.12 · FastAPI · D3.js SPA)
 docker compose up -d --build
 
 # 3 · Open the 5-tab dashboard
@@ -203,47 +215,34 @@ curl http://localhost:8080/api/health       # { status: ok, owl_exists: true }
 curl http://localhost:8080/api/validation   # 9-dim scores (live)
 curl http://localhost:8080/api/methodology  # formal model + 5-phase pipeline
 open http://localhost:8080/docs             # Swagger UI
+# ③ Verify ALL published scores
+curl -s http://localhost:8080/api/validation | python3 -m json.tool
 ```
-
 > 💡 **Live editing:** Modify `data/MALTG_onto.owl` or `data/dt_arch.json` → press **↺ Recargar Datos** → scores update instantly, no rebuild required.
+</details>
 
 ---
 
-## 📂 Project Structure
 
-<details>
-<summary><b>📁 Expand full file tree</b></summary>
+### Regression suite
 
-```
-maltg/
-├── 📄  README.md
-├── 🐳  docker-compose.yml              ← single-command deploy, port 8080
-│
-├── 📁  data/                           ← ✏️  Edit here to update dashboard live
-│   ├── 🦉  MALTG_onto.owl              ← OWL 2 / RDF-XML  (54 classes, 15 props)
-│   └── 🔷  dt_arch.json                ← Digital Twin (39 services, 54 connections)
-│
-├── 📁  backend/
-│   ├── 🐍  main.py                     ← FastAPI · 5 endpoints · Ψ scoring engine
-│   ├── 📋  requirements.txt
-│   └── 🐳  Dockerfile                  ← python:3.12-slim
-│
-├── 📁  frontend/
-│   └── 🌐  index.html                  ← SPA · 5 tabs · D3.js + Chart.js
-│
-├── 📁  src/assets/
-│   ├── 🖼️   banner.svg
-│   ├── 🖼️   pipeline.svg
-│   └── 🖼️   results.svg
-│
-└── 📁  evaluation/                     ← academic replication package
-    ├── 📄  expert_survey.pdf
-    ├── 📊  responses_anonymized.csv
-    ├── 📓  analysis.ipynb
-    └── 🧪  test_scoring.py
+```bash
+pip install requests pytest
+pytest evaluation/test_scoring.py -v
 ```
 
-</details>
+```
+TOGAF     onto=91.7  dt=64.2  gap=27.5  PASS  ✅
+COBIT     onto=84.3  dt=84.3  gap=0.0   PASS  ✅
+NIST      onto=77.5  dt=77.5  gap=0.0   PASS  ✅
+AI        onto=87.2  dt=74.1  gap=13.1  PASS  ✅
+BC        onto=76.2  dt=64.8  gap=11.4  PASS  ✅
+OD        onto=83.4  dt=83.4  gap=0.0   PASS  ✅
+SEC       onto=87.6  dt=87.6  gap=0.0   PASS  ✅
+INTEROP   onto=86.3  dt=86.3  gap=0.0   PASS  ✅
+LEGALTECH onto=69.1  dt=41.5  gap=27.6  PASS  ✅
+OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
+```
 
 ---
 
@@ -340,24 +339,6 @@ maltg/
 | **RQ2** | Can a Structural Digital Twin automatically quantify governance conformance gaps? | Ψ engine vs manual audit — Pearson r ≥ 0.70 |
 | **RQ3** | Which dimensions show the largest gaps in LegalTech SMEs? | Multi-case study + statistical analysis |
 | **RQ4** | How does MALTG compare to ArchiMate+TOGAF and SABSA? | 10-attribute Framework Comparison Matrix |
-
-</details>
-
-<details>
-<summary><b>📖 BibTeX Citation</b></summary>
-
-```bibtex
-@article{maltg_legaltech_2025,
-  title   = {{MALTG}: A Multi-Layer {LegalTech} Governance Ontology
-             with Structural Digital Twin--Based Conformance Validation
-             for Integrated Enterprise Standards},
-  journal = {Knowledge-Based Systems},
-  year    = {2025},
-  note    = {Under review},
-  doi     = {10.5281/zenodo.XXXXX},
-  url     = {https://github.com/your-org/maltg}
-}
-```
 
 </details>
 
@@ -480,43 +461,6 @@ LegalTech remediation path → δ = 0.0:
 
 ---
 
-## 🚀 3-Command Replication
-
-```bash
-# ① Clone
-git clone https://github.com/your-org/maltg && cd maltg
-
-# ② Launch  (Python 3.12 · FastAPI · D3.js SPA)
-docker compose up -d --build
-
-# ③ Verify ALL published scores
-curl -s http://localhost:8080/api/validation | python3 -m json.tool
-```
-
-### Regression suite
-
-```bash
-pip install requests pytest
-pytest evaluation/test_scoring.py -v
-```
-
-```
-TOGAF     onto=91.7  dt=64.2  gap=27.5  PASS  ✅
-COBIT     onto=84.3  dt=84.3  gap=0.0   PASS  ✅
-NIST      onto=77.5  dt=77.5  gap=0.0   PASS  ✅
-AI        onto=87.2  dt=74.1  gap=13.1  PASS  ✅
-BC        onto=76.2  dt=64.8  gap=11.4  PASS  ✅
-OD        onto=83.4  dt=83.4  gap=0.0   PASS  ✅
-SEC       onto=87.6  dt=87.6  gap=0.0   PASS  ✅
-INTEROP   onto=86.3  dt=86.3  gap=0.0   PASS  ✅
-LEGALTECH onto=69.1  dt=41.5  gap=27.6  PASS  ✅
-OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
-```
-
-> 💡 **Live editing:** Modify `data/MALTG_onto.owl` or `data/dt_arch.json` → press **↺ Reload** in the dashboard → scores recalculate instantly, no rebuild needed.
-
----
-
 ## 🎮 Live Dashboard — 5 Tabs
 
 | Tab | Content | URL |
@@ -621,31 +565,6 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 
 ---
 
-## 📁 Repository Structure
-
-```
-maltg/
-├── 📄  README.md
-├── 🐳  docker-compose.yml
-│
-├── 📁  data/                      ← ✏️ edit here → live scores
-│   ├── 🦉  MALTG_onto.owl         ← OWL 2 · 54 classes · 15 props
-│   └── 🔷  dt_arch.json           ← Digital Twin · 39 services · 54 edges
-│
-├── 📁  src/
-│   ├── 🐍  backend/main.py        ← FastAPI · Ψ engine · 5 endpoints
-│   └── 🌐  frontend/index.html    ← SPA · 5 tabs · D3.js v7
-│
-├── 📁  src/assets/                    ← SVG diagrams (rendered in README)
-│   ├── banner.svg · architecture.svg
-│   ├── formal_model.svg · conformance_dashboard.svg
-│   └── sensitivity.svg
-│
-└── 📁  evaluation/
-    ├── 📊  responses_anonymized.csv
-    ├── 📓  analysis.ipynb
-    └── 🧪  test_scoring.py        ← bit-for-bit regression suite
-```
 
 ---
 
@@ -686,23 +605,6 @@ maltg/
 
 ---
 
-## 📖 BibTeX
-
-```bibtex
-@article{maltg_legaltech_2026,
-  title     = {{MALTG}: Structural Digital Twin--Driven Validation for a
-               Multidimensional {LegalTech} Governance Architecture Ontology},
-  journal   = {Applied Sciences},
-  publisher = {MDPI},
-  year      = {2026},
-  note      = {Under review},
-  doi       = {10.5281/zenodo.XXXXX},
-  url       = {https://github.com/your-org/maltg}
-}
-```
-
----
-
 <div align="center">
 
 [![TOGAF](https://img.shields.io/badge/TOGAF-9.2-00e5ff?style=for-the-badge&labelColor=0d1117)](https://www.opengroup.org/togaf)
@@ -715,3 +617,23 @@ maltg/
 <sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub>
 
 </div>
+
+<div align="center">
+<sub><b>MALTG Architecture Validator</b> · FastAPI · D3.js v7 · Chart.js v4 · OWL 2 · Docker Compose</sub><br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=000000&center=true&vCenter=true&width=700&lines=TOGAF%C2%AE+%C2%B7+COBIT%C2%AE+ISACA+%C2%B7+NIST+CSF+%C2%B7+GDPR+EUR-Lex+%C2%B7+eIDAS+EU+Commission" alt="Typing SVG"/> compliance.
+</div>
+
+---
+<a href="https://www.opengroup.org/togaf"><img src="https://img.shields.io/badge/TOGAF--00e5ff?style=for-the-badge&labelColor=0d1117" alt="TOGAF"/></a>
+  <a href="https://www.isaca.org/resources/cobit"><img src="https://img.shields.io/badge/COBIT--ffc947?style=for-the-badge&labelColor=0d1117" alt="COBIT"/></a>
+  <a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
+  <a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
+  <a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
+
+<a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>
+
+<a href="https://www.sciencedirect.com/journal/knowledge-based-systems"><img src="https://img.shields.io/badge/KBS_Q1-IF_8.8-ff9a3c?style=for-the-badge&labelColor=0d1117" alt="Target"/></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
+<a href="https://zenodo.org"><img src="https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117" alt="DOI"/></a>
+![Quick Start Map](https://img.shields.io/badge/Quick%20Start%20Map-blue)
+---
