@@ -115,58 +115,15 @@
 
 | Symbol | Name | Formal Definition | Source |
 |:------:|------|-------------------|:------:|
-| **Ω** | Ontological Reference | `⟨C, P, I, ⊑, A⟩` <sub> <br>— 54 classes · 15 props · RDF/XML </sub>| `MALTG_onto.owl` |
-| **Δ** | Structural Digital Twin | `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges · directed graph </sub>| `dt_arch.json` |
+| **Ω** | Ontological Reference | **Ontological Reference** : `⟨C, P, I, ⊑, A⟩` <sub> <br>— 54 classes · 15 props · RDF/XML </sub>| `MALTG_onto.owl` |
+<sub>↓ parse</sub>
+| **Δ** | Structural Digital Twin | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges · directed graph </sub>| `dt_arch.json` |
 | **Γ** | Conformance Mapping | `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
 | **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` | `main.py → psi()` |
 | **δ** | Conformance Gap | `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
 
 <br/>
 
-<table>
-<tr>
-<th align="center" width="150">Phase</th>
-<th>Formal Definition</th>
-<th align="center" width="150">Source</th>
-</tr>
-
-<tr>
-<td align="center">
-  <img src="https://img.shields.io/badge/Ω-Ontological Reference-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
-</td>
-<td>
-  <sub>
-  <b>Ω : </b> ⟨C, P, I, ⊑, A⟩ 
-  <br/>
-  54 classes · 15 properties · RDF/XML serialization 
-  </sub>
-</td>
-<td align="center">
-  <sub>
-  <code><b>MALTG_onto.owl</b></code><br/>
-  OWL 2 taxonomy 
-  </sub>
-</td>
- 
-</tr>
-<tr>
-<td align="center">
-  <img src="https://img.shields.io/badge/Δ-Structural Digital Twin-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
-</td>
-<td>
-  <sub>
-  <b> Δ : </b> ⟨V, E, τ, μ⟩
-  <br/>
-  — 39 services · 54 edges · directed graph 
-  </sub>
-</td>
-<td align="center">
-  <code><b> dt_arch.json </b></code><br/>
-  </sub>
-</td>
-</tr>
-
-</table>
 
 
 <table>
