@@ -115,10 +115,10 @@
 
 | Symbol | Name | Formal Definition | Source |
 |:------:|------|-------------------|:------:|
-| **Ω** | Ontological Reference | `⟨C, P, I, ⊑, A⟩` — 54 classes · 15 props · RDF/XML | `MALTG_onto.owl` |
-| **Δ** | Structural Digital Twin | `⟨V, E, τ, μ⟩` — 39 services · 54 edges · directed graph | `dt_arch.json` |
+| **Ω** | Ontological Reference | `⟨C, P, I, ⊑, A⟩` <sub> <br>— 54 classes · 15 props · RDF/XML </sub>| `MALTG_onto.owl` |
+| **Δ** | Structural Digital Twin | `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges · directed graph </sub>| `dt_arch.json` |
 | **Γ** | Conformance Mapping | `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
-| **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)` | `main.py → psi()` |
+| **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` | `main.py → psi()` |
 | **δ** | Conformance Gap | `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
 
 <br/>
@@ -162,6 +162,7 @@
 </td>
 <td align="center">
   <code><b> dt_arch.json </b></code><br/>
+  </sub>
 </td>
 </tr>
 
