@@ -51,7 +51,9 @@
   <a href="https://www.nist.gov/cyberframework"><img src="https://img.shields.io/badge/NIST_CSF--ff4d6d?style=for-the-badge&labelColor=0d1117" alt="NIST CSF"/></a>
   <a href="https://gdpr.eu"><img src="https://img.shields.io/badge/GDPR-2016%2F679-60a5fa?style=for-the-badge&labelColor=0d1117" alt="GDPR"/></a>
   <a href="https://digital-strategy.ec.europa.eu"><img src="https://img.shields.io/badge/eIDAS-2.0-60a5fa?style=for-the-badge&labelColor=0d1117" alt="eIDAS"/></a>
+
 <a href="docker-compose.yml"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/></a>
+
 <a href="https://www.sciencedirect.com/journal/knowledge-based-systems"><img src="https://img.shields.io/badge/KBS_Q1-IF_8.8-ff9a3c?style=for-the-badge&labelColor=0d1117" alt="Target"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
 <a href="https://zenodo.org"><img src="https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117" alt="DOI"/></a>
@@ -81,7 +83,7 @@
 </td>
 <td width="50%" valign="top">
 
-### 🟣 Technology Integration Layer
+> 🟣 Technology Integration Layer
 
 | | Layer | Components |
 |---|-------|-----------|
@@ -90,7 +92,7 @@
 | 📡 | **Open Data** | APIs · Data Lakes · Open Standards · Interoperability |
 | 🛡️ | **Security** | Zero Trust · Encryption · IAM · Compliance |
 
-### 🔵 Foundation Layer
+> 🔵 Foundation Layer
 
 | | Framework | Domains |
 |---|-----------|---------|
@@ -104,15 +106,67 @@
 
 ---
 
-## 🔬 Formal Validation Methodology
 
-> The methodology is formalized as the **5-tuple `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
-
-<br/>
-
+[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=Formal+Model+/+Validation+Methodology)]()
+**`MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
 **`MALTG_onto.owl`** &nbsp;·&nbsp; **`dt_arch.json`** &nbsp;·&nbsp; **`maltg_ref`** &nbsp;·&nbsp; **`Ψ engine`** &nbsp;·&nbsp; **`δ gap`**
 
+![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
+
+| Symbol | Name | Formal Definition | Source |
+|:------:|------|-------------------|:------:|
+| **Ω** | Ontological Reference | `⟨C, P, I, ⊑, A⟩` — 54 classes · 15 props · RDF/XML | `MALTG_onto.owl` |
+| **Δ** | Structural Digital Twin | `⟨V, E, τ, μ⟩` — 39 services · 54 edges · directed graph | `dt_arch.json` |
+| **Γ** | Conformance Mapping | `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
+| **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)` | `main.py → psi()` |
+| **δ** | Conformance Gap | `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
+
 <br/>
+
+<table>
+<tr>
+<th align="center" width="150">Phase</th>
+<th>Formal Definition</th>
+<th align="center" width="150">Source</th>
+</tr>
+
+<tr>
+<td align="center">
+  <img src="https://img.shields.io/badge/Ω-Ontological Reference-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
+</td>
+<td>
+  <sub>
+  <b>Ω : </b> ⟨C, P, I, ⊑, A⟩ 
+  <br/>
+  54 classes · 15 properties · RDF/XML serialization 
+  </sub>
+</td>
+<td align="center">
+  <sub>
+  <code><b>MALTG_onto.owl</b></code><br/>
+  OWL 2 taxonomy 
+  </sub>
+</td>
+ 
+</tr>
+<tr>
+<td align="center">
+  <img src="https://img.shields.io/badge/Δ-Structural Digital Twin-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
+</td>
+<td>
+  <sub>
+  <b> Δ : </b> ⟨V, E, τ, μ⟩
+  <br/>
+  — 39 services · 54 edges · directed graph 
+  </sub>
+</td>
+<td align="center">
+  <code><b> dt_arch.json </b></code><br/>
+</td>
+</tr>
+
+</table>
+
 
 <table>
 <tr>
@@ -508,18 +562,6 @@ pytest evaluation/test_scoring.py -v
 
 
 
-
-## 🧮 Formal Model — `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`
-
-![MALTG formal model — 5-phase validation pipeline](src/assets/formal_model.svg)
-
-| Symbol | Name | Formal Definition | Source |
-|:------:|------|-------------------|:------:|
-| **Ω** | Ontological Reference | `⟨C, P, I, ⊑, A⟩` — 54 classes · 15 props · RDF/XML | `MALTG_onto.owl` |
-| **Δ** | Structural Digital Twin | `⟨V, E, τ, μ⟩` — 39 services · 54 edges · directed graph | `dt_arch.json` |
-| **Γ** | Conformance Mapping | `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
-| **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)` | `main.py → psi()` |
-| **δ** | Conformance Gap | `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
 
 ### Theorem 1 — Properties of Ψ
 
