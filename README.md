@@ -115,77 +115,18 @@
 
 | Symbol | Formal Definition | Source |
 |:------:|-------------------|:------:|
-| **Ω** | **Ontological Reference** <br>  `⟨C, P, I, ⊑, A⟩`  <br><sub>54 classes · 15 properties · RDF/XML serialization</sub>| `MALTG_onto.owl` <br><sub>OWL 2 taxonomy </sub>|
+| **Ω** | **Ontological Reference** <br>  `⟨C, P, I, ⊑, A⟩`  <br><sub> 54 classes · 15 properties · RDF/XML serialization</sub>| `MALTG_onto.owl` <br><sub>OWL 2 taxonomy </sub>|
 <sub>↓ parse</sub>
-| **Δ** | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges/connections · 9 architectural layers · directed graph </sub>| `dt_arch.json` <br><sub>Service graph <code>G(V, E)</code> </sub>|
+| **Δ** | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩`  <br><sub> — 39 services · 54 edges/connections · 9 architectural layers · directed graph </sub>| `dt_arch.json` <br><sub>Service graph <code>G(V, E)</code> </sub>|
 <sub>↓ align via maltg_ref</sub>
-| **Γ** | **Conformance Mapping** <br>  `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
-| **Ψ** | **Hierarchical Coverage** <br>  `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` | `main.py → psi()` |
-| **δ** | **Conformance Gap** <br>  `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
+| **Γ** | **Conformance Mapping** <br>  `Γ: C → 2^V` via `maltg_ref` annotations  <br><sub>Each OWL class mapped to the set of DT services that implement it</sub>| `main.py` |
+<sub>↓ score</sub>
+| **Ψ** | **Hierarchical Coverage** <br>  `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` <br><sub>Determinism · Monotonicity · Completeness · Boundedness ∈ [0,1]</sub>| `main.py → psi()` <br/> <code>Ψ engine</code>|
+<sub>↓ gap</sub>
+| **δ** | **Conformance Gap** <br>  `δ(d) = score_Ω(d) · (1 − Ψ(d))` <br/><sub>Quantifies unrealized governance potential per dimension</sub> | `GET /api/validation` |
 
 <br/>
 <img src="https://img.shields.io/badge/Ω-ONTOLOGY-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
-
-
-<table>
-<tr>
-<th align="center" width="120">Phase</th>
-<th align="center" width="80">Symbol</th>
-<th>Description</th>
-<th align="center" width="100">Source</th>
-</tr>
-
-
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/%E2%91%A2_MAPPING-a855f7?style=flat-square&labelColor=0d1117" alt="Phase 3"/>
-</td>
-<td align="center"><b>Γ</b></td>
-<td>
-<b>Conformance Mapping</b><br/>
-<code>Γ: C → 2^V</code> via <code>maltg_ref</code> annotations<br/>
-<sub>Each OWL class mapped to the set of DT services that implement it</sub>
-</td>
-<td align="center"><code>maltg_ref[ ]</code></td>
-</tr>
-
-<tr>
-<td align="center"><sub>↓ score</sub></td>
-<td></td><td></td><td></td>
-</tr>
-
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/%E2%91%A3_COVERAGE-ffc947?style=flat-square&labelColor=0d1117" alt="Phase 4"/>
-</td>
-<td align="center"><b>Ψ</b></td>
-<td>
-<b>Hierarchical Coverage</b><br/>
-<code>Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub_d ∩ R| / |sub_d|)</code><br/>
-<sub>Determinism · Monotonicity · Completeness · Boundedness ∈ [0,1]</sub>
-</td>
-<td align="center"><code>Ψ engine</code></td>
-</tr>
-
-<tr>
-<td align="center"><sub>↓ gap</sub></td>
-<td></td><td></td><td></td>
-</tr>
-
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/%E2%91%A4_GAP-ff4d6d?style=flat-square&labelColor=0d1117" alt="Phase 5"/>
-</td>
-<td align="center"><b>δ</b></td>
-<td>
-<b>Conformance Gap</b><br/>
-<code>δ(d) = score_Ω(d) · (1 − Ψ(d))</code><br/>
-<sub>Quantifies unrealized governance potential per dimension</sub>
-</td>
-<td align="center"><code>GET /api/validation</code></td>
-</tr>
-
-</table>
 
 ---
 
