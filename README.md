@@ -30,6 +30,7 @@
 <br/>
 <div align="left">
 
+[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=1000&color=0B4A66&width=400&lines=Quick+Start+Map)]()
 ![Quick Start Map](https://img.shields.io/badge/Quick%20Start%20Map-blue)
 ```C
     "I want the theory"       →  Formal Model
