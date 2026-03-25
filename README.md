@@ -108,10 +108,13 @@
 
 
 [![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=Formal+Model+/+Validation+Methodology)]()
-**`MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
-**`MALTG_onto.owl`** &nbsp;·&nbsp; **`dt_arch.json`** &nbsp;·&nbsp; **`maltg_ref`** &nbsp;·&nbsp; **`Ψ engine`** &nbsp;·&nbsp; **`δ gap`**
-
-![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
+<div align="center">
+  
+  ![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
+  **`MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
+  <img src="https://img.shields.io/badge/Ω-MALTG_onto.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/> <img src="https://img.shields.io/badge/Δ-dt_arch.json-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Δ-maltg_ref-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Ψ-engine-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/δ-gap-00e5aa?style=flat-square&labelColor=0d1117"/>
+  
+</div>
 
 | Symbol | Formal Definition | Source |
 |:------:|-------------------|:------:|
@@ -124,9 +127,6 @@
 | **Ψ** | **Hierarchical Coverage** <br>  `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` <br><sub>Determinism · Monotonicity · Completeness · Boundedness ∈ [0,1]</sub>| `main.py → psi()` <br/> <code>Ψ engine</code>|
 <sub>↓ gap</sub>
 | **δ** | **Conformance Gap** <br>  `δ(d) = score_Ω(d) · (1 − Ψ(d))` <br/><sub>Quantifies unrealized governance potential per dimension</sub> | `GET /api/validation` |
-
-<br/>
-<img src="https://img.shields.io/badge/Ω-ONTOLOGY-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
 
 ---
 
