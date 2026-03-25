@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=baf&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=0B4A66&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
 
   <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
   <br/>
@@ -15,7 +15,7 @@
 
 <div align="center">
   <br/> <br/>
-  MALTG : <b> Multidimensional LegalTech Governance Architecture</b>
+  <b>   MALTG : Multidimensional LegalTech Governance Architecture</b>
   <br/><br/>
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <br/><br/>
@@ -30,7 +30,7 @@
 <br/>
 <div align="left">
 
-[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=0B4A66&width=400&lines=Quick+Start+Map)]()
+[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=Quick+Start+Map)]()
 ```C
     "I want the theory"       →  Formal Model
     "I want to reproduce"     →  Command Replication
@@ -58,7 +58,7 @@
 ![Quick Start Map](https://img.shields.io/badge/Quick%20Start%20Map-blue)
 ---
 
-[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=0B4A66&width=400&lines=⬡+Architecture+Layers)]()
+[![Layers](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=⬡+Architecture+Layers)]()
 <table>
 <tr>
 <td width="50%" valign="top">
