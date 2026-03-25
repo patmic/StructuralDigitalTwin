@@ -113,17 +113,18 @@
 
 ![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
 
-| Symbol | Name | Formal Definition | Source |
-|:------:|------|-------------------|:------:|
-| **Ω** | Ontological Reference | **Ontological Reference** : `⟨C, P, I, ⊑, A⟩` <sub> <br>— 54 classes · 15 props · RDF/XML </sub>| `MALTG_onto.owl` |
+| Symbol | Formal Definition | Source |
+|:------:|-------------------|:------:|
+| **Ω** | **Ontological Reference** <br>  `⟨C, P, I, ⊑, A⟩`  <br><sub>54 classes · 15 properties · RDF/XML serialization</sub>| `MALTG_onto.owl` <br><sub>OWL 2 taxonomy </sub>|
 <sub>↓ parse</sub>
-| **Δ** | Structural Digital Twin | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges · directed graph </sub>| `dt_arch.json` |
-| **Γ** | Conformance Mapping | `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
-| **Ψ** | Hierarchical Coverage | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` | `main.py → psi()` |
-| **δ** | Conformance Gap | `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
+| **Δ** | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩` <sub> <br> — 39 services · 54 edges/connections · 9 architectural layers · directed graph </sub>| `dt_arch.json` <br><sub>Service graph <code>G(V, E)</code> </sub>|
+<sub>↓ align via maltg_ref</sub>
+| **Γ** | **Conformance Mapping** <br>  `Γ: C → 2^V` via `maltg_ref` annotations | `main.py` |
+| **Ψ** | **Hierarchical Coverage** <br>  `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(sub(d)∩R / sub(d))` | `main.py → psi()` |
+| **δ** | **Conformance Gap** <br>  `δ(d) = score_Ω(d) · (1 − Ψ(d))` | `GET /api/validation` |
 
 <br/>
-
+<img src="https://img.shields.io/badge/Ω-ONTOLOGY-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
 
 
 <table>
@@ -134,41 +135,6 @@
 <th align="center" width="100">Source</th>
 </tr>
 
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/%E2%91%A0_ONTOLOGY-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/>
-</td>
-<td align="center"><b>Ω</b></td>
-<td>
-<b>Ontological Reference</b><br/>
-OWL 2 taxonomy <code>(C, P, I, ≤, A)</code><br/>
-<sub>54 classes · 15 properties · RDF/XML serialization</sub>
-</td>
-<td align="center"><code>MALTG_onto.owl</code></td>
-</tr>
-
-<tr>
-<td align="center"><sub>↓ parse</sub></td>
-<td></td><td></td><td></td>
-</tr>
-
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/%E2%91%A1_DIGITAL_TWIN-10e98c?style=flat-square&labelColor=0d1117" alt="Phase 2"/>
-</td>
-<td align="center"><b>Δ</b></td>
-<td>
-<b>Structural Digital Twin</b><br/>
-Service graph <code>G(V, E)</code><br/>
-<sub>39 services · 54 connections · 9 architectural layers</sub>
-</td>
-<td align="center"><code>dt_arch.json</code></td>
-</tr>
-
-<tr>
-<td align="center"><sub>↓ align via maltg_ref</sub></td>
-<td></td><td></td><td></td>
-</tr>
 
 <tr>
 <td align="center">
