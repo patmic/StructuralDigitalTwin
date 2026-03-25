@@ -5,26 +5,22 @@
   <br/>
   A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
   <br/>
-  <img src="src/assets/line.svg" height="5px" width="100%"/>
   <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
   <a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
   <a href="data/dt_arch.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
   <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
+  <img src="src/assets/line.svg" height="5px" width="100%"/>
   <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
-  <br/>
-  <br/>
 </div>
 
 <div align="center">
-  <br/>
-  <b>MALTG Overview</b>
-  <br/>
-  <b> Multidimensional LegalTech Governance Architecture -  </b>
+  <br/> <br/>
+  MALTG : <b> Multidimensional LegalTech Governance Architecture</b>
   <br/><br/>
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <br/><br/>
   <sub> 
-    The system has <b>8 vertical architectural layers</b> 
+    <b> - Overview - </b> The system has <b>8 vertical architectural layers</b> 
     (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal <b>LegalTech Domain Layer</b> — the novel v3 contribution. 
     Each service carries `maltg_ref` annotations that link it directly to OWL 2 concepts in the ontology. 
     Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
@@ -60,21 +56,15 @@
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
 <a href="https://zenodo.org"><img src="https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117" alt="DOI"/></a>
 
-<br/><br/>
-
-
-
-</div>
-
 ---
 
-## ⬡ Architecture Layers
+![Layers](https://img.shields.io/badge/⬡%20Architecture%20Layers-blue)
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔵 LegalTech Domain Layer *(v3 — new)*
+> **LegalTech Domain Layer**
 
 | Concept | Regulation |
 |---------|-----------|
