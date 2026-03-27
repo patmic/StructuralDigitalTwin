@@ -7,12 +7,10 @@
   xmlns:maltg="http://maltg.arch/onto#"
   xml:base="http://maltg.arch/onto">
 
-  <!-- ==========================================
-       MALTG MASTER ONTOLOGY — MALTG_onto.owl
-       Multi-layer Architecture Ledger
-       Technology Governance
-       Version: 2.4.0
-       ========================================== -->
+  <!-- ===============================================================
+       MALTG MASTER ONTOLOGY - MALTG_Odontology.owl
+       Multidimensional Architecturer LegalTech Governance (MALTG)
+       =============================================================== -->
 
   <owl:Ontology rdf:about="http://maltg.arch/onto">
     <rdfs:label>MALTG Master Ontology — LegalTech Edition</rdfs:label>
@@ -58,7 +56,7 @@
     <rdfs:label>MALTG Core</rdfs:label>
     <maltg:layer>core</maltg:layer>
     <maltg:radius>22</maltg:radius>
-    <maltg:description>Multi-layer Architecture Ledger Technology Governance — Nodo central que integra todos los frameworks y capas tecnológicas</maltg:description>
+    <maltg:description>Multidimensional Architecture LegalTech Governance — Nodo central que integra todos los frameworks y capas tecnológicas</maltg:description>
     <maltg:score>87</maltg:score>
   </owl:Class>
 
@@ -664,10 +662,8 @@
 
   <!-- ==========================================
        LEGALTECH CROSS-LAYER OBJECT PROPERTIES
-       These connect LegalTech domain concepts
-       to Foundation and Tech Integration layers,
-       making the multi-layer integration formally
-       explicit and verifiable by a reasoner.
+       These connect LegalTech domain concepts to Foundation and Tech Integration layers,
+       making the multi-layer integration formally explicit and verifiable by a reasoner.
        ========================================== -->
 
   <owl:ObjectProperty rdf:about="http://maltg.arch/onto#legaltech_uses_AI">

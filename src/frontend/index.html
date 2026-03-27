@@ -6,13 +6,13 @@
 <title>MALTG Architecture Validator</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 /* ════════════════════════════════════════════════════════
    THEME TOKENS — dark (default)
 ════════════════════════════════════════════════════════ */
 :root{
-  --bg0:#050810;--bg1:#080d1a;--bg2:#0d1525;--bg3:#111c30;--bg4:#162038;
+  --bg0:#050810dc;--bg1:#080d1a;--bg2:#0d1525;--bg3:#111c30;--bg4:#16203877;
   --t1:#e8f0ff;--t2:#7a8db0;--t3:#3d4f6e;
   --bdr:#1a2744;--bdr2:#243355;
   --hdr-bg:rgba(5,8,16,.95);
@@ -50,7 +50,7 @@
 
 body{
   background:var(--bg0);color:var(--t1);
-  font-family:'JetBrains Mono',monospace;
+  font-family:'Inter', system-ui, -apple-system, sans-serif,monospace;
   min-height:100vh;overflow-x:hidden;
   transition:background .35s,color .35s;
 }
@@ -73,7 +73,7 @@ header{
 }
 .logo{display:flex;align-items:center;gap:.9rem}
 .logo-text{
-  font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;
+  font-family:'Roboto',sans-serif;font-weight:800;font-size:1.35rem;
   letter-spacing:.15em;color:var(--cyan);text-shadow:var(--gcyan);
 }
 .logo-sub{font-size:.58rem;color:var(--t2);letter-spacing:.2em;text-transform:uppercase;margin-top:1px}
@@ -170,7 +170,7 @@ main{
 .kpi:hover{background:var(--bg4);border-color:var(--bglow);transform:translateY(-2px)}
 .kpi-label{font-size:.57rem;letter-spacing:.15em;text-transform:uppercase;color:var(--t2);margin-bottom:.4rem}
 .kpi-value{
-  font-family:'Syne',sans-serif;font-size:1.45rem;font-weight:800;
+  font-family:'Roboto',sans-serif;font-size:1.45rem;font-weight:800;
   color:var(--ac,var(--cyan));line-height:1;
 }
 .kpi-delta{font-size:.58rem;margin-top:.28rem}
@@ -179,7 +179,7 @@ main{
 /* SECTIONS */
 .section{display:none}.section.active{display:block}
 .stitle{
-  font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;
+  font-family:'Roboto',sans-serif;font-size:.7rem;font-weight:700;
   letter-spacing:.2em;text-transform:uppercase;color:var(--t2);
   margin-bottom:1rem;display:flex;align-items:center;gap:.7rem;
 }
@@ -199,7 +199,7 @@ main{
   background:rgba(0,0,0,.12);
 }
 [data-theme="light"] .ph{background:rgba(0,0,0,.04)}
-.ptitle{font-family:'Syne',sans-serif;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ptitle{font-family:'Roboto',sans-serif;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .pbadge{
   font-size:.58rem;padding:.16rem .5rem;border-radius:100px;
   background:rgba(0,229,255,.1);color:var(--cyan);
@@ -216,7 +216,7 @@ main{
   background:rgba(0,0,0,.08);font-size:.59rem;color:var(--t3);
 }
 [data-theme="light"] .src-bar{background:rgba(0,0,0,.03)}
-.src-file{color:var(--cyan);font-family:'JetBrains Mono',monospace}
+.src-file{color:var(--cyan);font-family:'Inter',monospace}
 .src-ts{color:var(--t2)}
 
 /* TWO-COL */
@@ -235,7 +235,7 @@ main{
   background:var(--ac,var(--cyan));opacity:.04;pointer-events:none;
 }
 .lcard-title{
-  font-family:'Syne',sans-serif;font-size:.7rem;font-weight:800;
+  font-family:'Roboto',sans-serif;font-size:.7rem;font-weight:800;
   letter-spacing:.15em;text-transform:uppercase;
   color:var(--ac,var(--cyan));margin-bottom:.65rem;
   display:flex;align-items:center;gap:.45rem;
@@ -304,7 +304,7 @@ main{
   transition:background .35s;
 }
 .sc-card-label{font-size:.56rem;color:var(--t2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.35rem}
-.sc-card-val{font-family:'Syne',sans-serif;font-size:1.7rem;font-weight:800;line-height:1}
+.sc-card-val{font-family:'Roboto',sans-serif;font-size:1.7rem;font-weight:800;line-height:1}
 .sc-card-sub{font-size:.57rem;margin-top:.28rem}
 
 /* top gaps */
@@ -317,7 +317,7 @@ main{
 /* LOADING OVERLAY */
 #overlay{
   position:fixed;inset:0;z-index:999;
-  background:rgba(5,8,16,.8);backdrop-filter:blur(8px);
+  background:rgba(5,8,16,.1);backdrop-filter:blur(8px);
   display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;
 }
 [data-theme="light"] #overlay{background:rgba(200,210,240,.85)}
@@ -328,7 +328,7 @@ main{
   animation:spin .7s linear infinite;
 }
 .ov-msg{
-  font-family:'Syne',sans-serif;font-size:.82rem;
+  font-family:'Roboto',sans-serif;font-size:.82rem;
   letter-spacing:.15em;color:var(--cyan);text-transform:uppercase;
 }
 .ov-steps{display:flex;flex-direction:column;gap:.35rem}
@@ -343,12 +343,12 @@ main{
   max-width:240px;backdrop-filter:blur(12px);
 }
 #ntt{
-  background:rgba(8,13,26,.97);
+  background:rgba(8,13,26,.1);
   border:1px solid rgba(0,229,255,.3);
   box-shadow:0 0 16px rgba(0,229,255,.1);
 }
 #dtt{
-  background:rgba(8,13,26,.97);
+  background:rgba(8, 13, 26, 0.1);
   border:1px solid rgba(168,85,247,.3);
   box-shadow:0 0 16px rgba(168,85,247,.1);
 }
@@ -365,7 +365,7 @@ footer{
   justify-content:space-between;font-size:.58rem;color:var(--t3);
   background:var(--bg1);margin-top:2rem;transition:background .35s;
 }
-.fbrand{font-family:'Syne',sans-serif;color:var(--t2);letter-spacing:.08em}
+.fbrand{font-family:'Roboto',sans-serif;color:var(--t2);letter-spacing:.08em}
 
 /* ERROR STATE */
 .err-msg{padding:2rem;text-align:center;color:var(--rose);font-size:.72rem}
@@ -388,8 +388,8 @@ footer{
   <div class="ov-spinner"></div>
   <div class="ov-msg">Sincronizando ecosistema MALTG</div>
   <div class="ov-steps">
-    <div class="ov-step" id="s1"><div class="ov-step-dot"></div>Leyendo MALTG_onto.owl…</div>
-    <div class="ov-step" id="s2"><div class="ov-step-dot"></div>Leyendo dt_arch.json…</div>
+    <div class="ov-step" id="s1"><div class="ov-step-dot"></div>Leyendo MALTG_Odontology.owl…</div>
+    <div class="ov-step" id="s2"><div class="ov-step-dot"></div>Leyendo StructuralDigitalTwin.json…</div>
     <div class="ov-step" id="s3"><div class="ov-step-dot"></div>Calculando validación…</div>
     <div class="ov-step" id="s4"><div class="ov-step-dot"></div>Actualizando interfaz…</div>
   </div>
@@ -410,8 +410,8 @@ footer{
       <line x1="28" y1="13" x2="34" y2="10" stroke="#00e5ff" stroke-width="1"/>
     </svg>
     <div>
-      <div class="logo-text">MALTG</div>
-      <div class="logo-sub">Architecture Validator v2.5 · Data-Driven</div>
+      <div class="logo-text"> MALTG  </div>
+      <div class="logo-sub"> | ⬢ → Δ ⇄ 🕸️ | MULTIDIMENSIONAL ARCHITECTURE FOR LEGALTECH GOVERNANCE | Architecture Validator v1 · Data-Driven</div>
     </div>
   </div>
   <div class="hdr-right">
@@ -435,12 +435,12 @@ footer{
 
 <!-- NAV -->
 <nav>
-  <div class="nav-tab active" onclick="switchTab('overview')"><span class="nav-num">01</span>Overview</div>
-  <div class="nav-tab" onclick="switchTab('ontology')"><span class="nav-num">02</span>Ontología MALTG_onto</div>
-  <div class="nav-tab" onclick="switchTab('dt')"><span class="nav-num">03</span>Gemelo Digital DT_arch</div>
-  <div class="nav-tab" onclick="switchTab('validation')"><span class="nav-num">04</span>Validación Radar</div>
+  <div class="nav-tab active" onclick="switchTab('overview')"><span class="nav-num">01 </span>Overview</div>
+  <div class="nav-tab" onclick="switchTab('ontology')"><span class="nav-num">02 </span>MALTG Odontology</div>
+  <div class="nav-tab" onclick="switchTab('dt')"><span class="nav-num">03 </span>Structural Digital Twin</div>
+  <div class="nav-tab" onclick="switchTab('validation')"><span class="nav-num">04 </span>validation</div>
   <div class="nav-tab" onclick="switchTab('methodology')" style="border-left:1px solid var(--bdr)">
-    <span class="nav-num">05</span>Metodología Formal
+  <span class="nav-num">05 </span>Metodology
   </div>
 </nav>
 
@@ -449,14 +449,14 @@ footer{
   <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0">
     <div class="sb-dot ok" id="sb-owl-dot"></div>
     <span style="color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-size:.58rem">OWL</span>
-    <span class="src-file">/data/MALTG_onto.owl</span>
+    <span class="src-file">/data/MALTG_Odontology.owl</span>
     <span style="color:var(--t3);font-size:.56rem" id="sb-owl-hash">—</span>
   </div>
   <span class="vsep">·</span>
   <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0">
     <div class="sb-dot ok" id="sb-dt-dot"></div>
     <span style="color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-size:.58rem">JSON</span>
-    <span class="src-file" style="color:var(--gold)">/data/dt_arch.json</span>
+    <span class="src-file" style="color:var(--gold)">/data/StructuralDigitalTwin.json</span>
     <span style="color:var(--t3);font-size:.56rem" id="sb-dt-hash">—</span>
   </div>
   <span class="vsep">·</span>
@@ -476,7 +476,7 @@ footer{
   <div class="kpi" style="--ac:var(--cyan)"><div class="kpi-label">Madurez MALTG</div><div class="kpi-value" id="k-maltg">—</div><div class="kpi-delta up" id="k-maltg-d">Cargando…</div></div>
   <div class="kpi" style="--ac:var(--gold)"><div class="kpi-label">Nodos Ontología</div><div class="kpi-value" id="k-nodes">—</div><div class="kpi-delta up" id="k-nodes-d">—</div></div>
   <div class="kpi" style="--ac:var(--violet)"><div class="kpi-label">Score MALTG_onto</div><div class="kpi-value" id="k-onto">—</div><div class="kpi-delta up">↑ Ontología OWL</div></div>
-  <div class="kpi" style="--ac:var(--green)"><div class="kpi-label">Score DT_arch</div><div class="kpi-value" id="k-dt">—</div><div class="kpi-delta neutral">→ Gemelo Digital</div></div>
+  <div class="kpi" style="--ac:var(--green)"><div class="kpi-label">Score StructuralDigitalTwin</div><div class="kpi-value" id="k-dt">—</div><div class="kpi-delta neutral">→ Gemelo Digital</div></div>
   <div class="kpi" style="--ac:var(--rose)"><div class="kpi-label">GAP Global</div><div class="kpi-value" id="k-gap">—</div><div class="kpi-delta down" id="k-gap-d">—</div></div>
   <div class="kpi" style="--ac:var(--orange)"><div class="kpi-label">Servicios DT</div><div class="kpi-value" id="k-svcs">—</div><div class="kpi-delta up" id="k-svcs-d">—</div></div>
 </div>
@@ -517,14 +517,14 @@ footer{
   <div class="stitle">MALTG_onto — Ontología Maestra desde OWL</div>
   <div class="panel">
     <div class="ph">
-      <div class="ptitle">Grafo Ontológico · MALTG_onto.owl</div>
+      <div class="ptitle">Grafo Ontológico · MALTG_Odontology.owl</div>
       <div style="display:flex;gap:.45rem;align-items:center">
         <span style="font-size:.6rem;color:var(--t2)">Drag · Zoom · Hover</span>
         <span class="pbadge" id="onto-badge">—</span>
       </div>
     </div>
     <div class="src-bar">
-      <span>Fuente:</span><span class="src-file">/data/MALTG_onto.owl</span>
+      <span>Fuente:</span><span class="src-file">/data/MALTG_Odontology.owl</span>
       <span class="vsep">·</span><span style="color:var(--t3);font-size:.56rem" id="onto-hash">—</span>
       <span class="vsep">·</span><span>Cargado:</span><span class="src-ts" id="onto-ts">—</span>
     </div>
@@ -546,7 +546,7 @@ footer{
 
 <!-- ═══ 03 DIGITAL TWIN ══════════════════════════════════ -->
 <div class="section" id="sec-dt">
-  <div class="stitle">DT_arch — Gemelo Digital Estructural · Data-Driven</div>
+  <div class="stitle">StructuralDigitalTwin — Gemelo Digital Estructural · Data-Driven</div>
   <div class="panel">
     <div class="ph">
       <div class="ptitle">Digital Twin · Microservicio MALTG</div>
@@ -556,7 +556,7 @@ footer{
       </div>
     </div>
     <div class="src-bar">
-      <span>Fuente:</span><span class="src-file" style="color:var(--gold)">/data/dt_arch.json</span>
+      <span>Fuente:</span><span class="src-file" style="color:var(--gold)">/data/StructuralDigitalTwin.json</span>
       <span class="vsep">·</span><span style="color:var(--t3);font-size:.56rem" id="dt-hash">—</span>
       <span class="vsep">·</span><span>Cargado:</span><span class="src-ts" id="dt-ts">—</span>
     </div>
@@ -566,7 +566,7 @@ footer{
 
 <!-- ═══ 04 VALIDATION ════════════════════════════════════ -->
 <div class="section" id="sec-validation">
-  <div class="stitle">Validación — Contraste MALTG_onto vs DT_arch</div>
+  <div class="stitle">Validación — Contraste MALTG_onto vs StructuralDigitalTwin</div>
   <div class="val-grid">
 
     <!-- LEFT: Radar + bars -->
@@ -576,8 +576,8 @@ footer{
         <span class="pbadge" id="radar-badge">8 Dimensiones</span>
       </div>
       <div class="src-bar">
-        <span>Fuente:</span><span class="src-file">MALTG_onto.owl</span>
-        <span>+</span><span class="src-file" style="color:var(--gold)">dt_arch.json</span>
+        <span>Fuente:</span><span class="src-file">MALTG_Odontology.owl</span>
+        <span>+</span><span class="src-file" style="color:var(--gold)">StructuralDigitalTwin.json</span>
         <span class="vsep">·</span><span>Calculado:</span><span class="src-ts" id="val-ts">—</span>
       </div>
       <div class="pbody">
@@ -587,7 +587,7 @@ footer{
         </div>
         <div style="margin-top:1.2rem">
           <div style="font-size:.59rem;color:var(--t2);margin-bottom:.6rem;letter-spacing:.12em;text-transform:uppercase">
-            Puntuaciones por Dimensión — MALTG_onto.owl <span style="color:var(--cyan)">■</span> / DT_arch.json <span style="color:var(--gold)">■</span>
+            Puntuaciones por Dimensión — MALTG_Odontology.owl <span style="color:var(--cyan)">■</span> / StructuralDigitalTwin.json <span style="color:var(--gold)">■</span>
           </div>
           <div id="metric-rows"><div style="font-size:.62rem;color:var(--t3);padding:.5rem">Pulsa "Recargar Datos" para calcular…</div></div>
         </div>
@@ -597,7 +597,7 @@ footer{
     <!-- RIGHT: GAP analysis -->
     <div class="panel">
       <div class="ph">
-        <div class="ptitle">Análisis GAP — MALTG_onto vs DT_arch</div>
+        <div class="ptitle">Análisis GAP — MALTG_onto vs StructuralDigitalTwin</div>
         <span class="pbadge" id="gap-badge">Delta Analysis</span>
       </div>
       <div class="pbody">
@@ -612,7 +612,7 @@ footer{
             <div class="sc-card-sub up">↑ Ontología OWL</div>
           </div>
           <div class="sc-card">
-            <div class="sc-card-label">Score DT_arch</div>
+            <div class="sc-card-label">Score StructuralDigitalTwin</div>
             <div class="sc-card-val" style="color:var(--gold)" id="sc-dt">—</div>
             <div class="sc-card-sub neutral">→ Gemelo Digital</div>
           </div>
@@ -665,7 +665,7 @@ footer{
       </div>
       <div style="background:var(--bg3);border:1px solid var(--bdr);border-radius:6px;padding:.9rem 1.2rem">
         <div style="font-size:.58rem;color:var(--t3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem">Notación canónica</div>
-        <div id="formal-notation" style="font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--cyan);letter-spacing:.08em">
+        <div id="formal-notation" style="font-family:'Inter',monospace;font-size:.82rem;color:var(--cyan);letter-spacing:.08em">
           MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩
         </div>
         <div style="margin-top:.6rem;display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem" id="formal-formulas"></div>
@@ -714,7 +714,7 @@ footer{
 </main>
 
 <footer>
-  <div class="fbrand">MALTG Architecture Validator — Multi-layer Architecture Ledger Technology Governance</div>
+  <div class="fbrand">MALTG Architecture Validator — MULTIDIMENSIONAL ARCHITECTURE FOR LEGALTECH GOVERNANCE</div>
   <div>FastAPI 2.5 · D3.js v7 · Chart.js v4 · TOGAF 9.2 · COBIT 5 · NIST CSF 1.1</div>
   <div>Build: 2025.04.3 · Data-Driven Mode</div>
 </footer>
@@ -724,9 +724,9 @@ footer{
 
 <script>
 /* ═══════════════════════════════════════════════════════════════════
-   MALTG Dashboard v2.5  ·  Fixed Edition
+   MALTG Dashboard v1 ·  Fixed Edition
    Bugs fixed:
-     1. DT: maltg_ref can be array → handle both string and array
+     1. SDT: maltg_ref can be array → handle both string and array
      2. Charts: defer rendering until canvas is visible (tab active)
      3. Chart.js: destroy + recreate safely
    New:
@@ -978,7 +978,7 @@ function renderOntologyGraph(nodes, links){
     .attr('text-anchor','middle').attr('dy','.35em')
     .attr('fill',d=>LAYER_COLOR[d.type]||'#64748b')
     .attr('font-size',d=>d.r>14?'9px':'7.5px')
-    .attr('font-family','JetBrains Mono,monospace')
+    .attr('font-family','Inter,monospace')
     .attr('font-weight',d=>d.r>14?'600':'400')
     .style('pointer-events','none');
 
@@ -986,7 +986,7 @@ function renderOntologyGraph(nodes, links){
   nodeG.on('mouseover',(e,d)=>{
     const c=LAYER_COLOR[d.type]||'#64748b';
     tt.style.display='block';
-    tt.innerHTML=`<div style="color:${c};font-weight:600;font-size:.74rem;margin-bottom:4px;font-family:'Syne',sans-serif">${d.label}</div>
+    tt.innerHTML=`<div style="color:${c};font-weight:600;font-size:.74rem;margin-bottom:4px;font-family:'Roboto',sans-serif">${d.label}</div>
       <div style="color:var(--t2);font-size:.63rem;line-height:1.5;margin-bottom:5px">${d.description||''}</div>
       <div style="display:flex;gap:.9rem;font-size:.59rem">
         <span style="color:var(--t3)">Tipo: <span style="color:${c}">${(d.type||'').toUpperCase()}</span></span>
@@ -1044,7 +1044,7 @@ function renderDT(data){
       fill="${isDark?(l.fill||lyrFill):lyrFill}" rx="4"
       stroke="${isDark?'#1a2744':'#bfc9e0'}" stroke-width=".5"/>
     <text x="${l.x+l.width/2}" y="${l.y+17}" text-anchor="middle"
-      fill="${lyrTxt}" font-size="7" font-family="JetBrains Mono" letter-spacing="1.5">${l.label}</text>`;
+      fill="${lyrTxt}" font-size="7" font-family="Inter" letter-spacing="1.5">${l.label}</text>`;
   });
 
   // Connections
@@ -1076,15 +1076,15 @@ function renderDT(data){
         rx="5" fill="${boxFill}" stroke="${c}" stroke-width="1.2"/>
       <rect x="${s.x}" y="${s.y}" width="${s.width}" height="3" rx="5" fill="${c}" opacity=".75"/>
       <text x="${s.x+s.width/2}" y="${s.y+17}" text-anchor="middle"
-        fill="${c}" font-size="8.5" font-family="JetBrains Mono" font-weight="600">${s.label}</text>
+        fill="${c}" font-size="8.5" font-family="Inter" font-weight="600">${s.label}</text>
       <text x="${s.x+s.width/2}" y="${s.y+28}" text-anchor="middle"
-        fill="${subtxt}" font-size="7" font-family="JetBrains Mono">${s.subtitle}</text>
+        fill="${subtxt}" font-size="7" font-family="Inter">${s.subtitle}</text>
       <circle cx="${s.x+s.width-8}" cy="${s.y+10}" r="3" fill="${sc}" opacity=".8"/>
     </g>`;
   });
 
-  h+=`<text x="8" y="${H-6}" fill="${lyrTxt}" font-size="7.5" font-family="JetBrains Mono">
-    DT_arch · ${data.meta?.title||''} · v${data.meta?.version||''} · ${data.meta?.maltg_compliance||''}
+  h+=`<text x="8" y="${H-6}" fill="${lyrTxt}" font-size="7.5" font-family="Inter">
+    StructuralDigitalTwin · ${data.meta?.title||''} · v${data.meta?.version||''} · ${data.meta?.maltg_compliance||''}
   </text></svg>`;
 
   wrap.innerHTML=h;
@@ -1095,7 +1095,7 @@ function renderDT(data){
     el.addEventListener('mouseover',()=>{
       const d=el.dataset;
       tt.style.display='block';
-      tt.innerHTML=`<div style="color:${d.col};font-weight:600;font-size:.73rem;margin-bottom:4px;font-family:'Syne',sans-serif">${d.lbl}</div>
+      tt.innerHTML=`<div style="color:${d.col};font-weight:600;font-size:.73rem;margin-bottom:4px;font-family:'Roboto',sans-serif">${d.lbl}</div>
         <div style="color:var(--t2);font-size:.62rem;line-height:1.5;margin-bottom:4px">${d.desc}</div>
         ${d.maltg?`<div style="font-size:.59rem;color:var(--t3)">MALTG refs: <span style="color:${d.col}">${d.maltg}</span></div>`:''}`;
     });
@@ -1190,7 +1190,7 @@ function renderValidationCharts(val){
   const gridC = isDark ? '#1a2744' : '#bfc9e0';
   const textC = isDark ? '#7a8db0' : '#3a4d70';
   Chart.defaults.color = textC;
-  Chart.defaults.font.family = "'JetBrains Mono',monospace";
+  Chart.defaults.font.family = "'Inter',monospace";
 
   // ── Radar ─────────────────────────────────────────────────────
   // Safe destroy
@@ -1209,7 +1209,7 @@ function renderValidationCharts(val){
         {label:'MALTG_onto',data:ontoV,
           backgroundColor:'rgba(0,229,255,.09)',borderColor:'#00e5ff',
           pointBackgroundColor:'#00e5ff',pointRadius:4,borderWidth:2},
-        {label:'DT_arch',data:dtV,
+        {label:'StructuralDigitalTwin',data:dtV,
           backgroundColor:'rgba(255,201,71,.07)',borderColor:'#ffc947',
           pointBackgroundColor:'#ffc947',pointRadius:4,borderWidth:2,
           borderDash:[4,3]},
@@ -1240,7 +1240,7 @@ function renderValidationCharts(val){
       datasets:[
         {label:'MALTG_onto',data:ontoV,
           backgroundColor:'#00e5ff28',borderColor:'#00e5ff',borderWidth:1.5,borderRadius:3},
-        {label:'DT_arch',data:dtV,
+        {label:'StructuralDigitalTwin',data:dtV,
           backgroundColor:'#ffc94728',borderColor:'#ffc947',borderWidth:1.5,borderRadius:3},
         {label:'GAP',data:gapV,
           backgroundColor:'#ff4d6d28',borderColor:'#ff4d6d',borderWidth:1.5,borderRadius:3},
@@ -1273,12 +1273,12 @@ function renderMethodology(meth, val){
     card.style.cssText = `background:var(--bg3);border:1px solid var(--bdr);border-radius:8px;
       padding:.8rem;position:relative;overflow:hidden;transition:background .35s`;
     card.innerHTML = `
-      <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;
+      <div style="font-family:'Roboto',sans-serif;font-size:1.5rem;font-weight:800;
                   color:var(--cyan);line-height:1;margin-bottom:.4rem">${c.symbol}</div>
       <div style="font-size:.65rem;font-weight:700;color:var(--t1);margin-bottom:.3rem;
-                  font-family:'Syne',sans-serif;text-transform:uppercase;letter-spacing:.08em">${c.name}</div>
+                  font-family:'Roboto',sans-serif;text-transform:uppercase;letter-spacing:.08em">${c.name}</div>
       <div style="font-size:.58rem;color:var(--t2);line-height:1.5;margin-bottom:.4rem">${c.definition}</div>
-      <div style="font-size:.54rem;color:var(--t3);font-family:'JetBrains Mono',monospace;
+      <div style="font-size:.54rem;color:var(--t3);font-family:'Inter',monospace;
                   background:var(--bg3);border:1px solid var(--bdr);border-radius:3px;
                   padding:.2rem .4rem;word-break:break-all">${c.formal}</div>`;
     fmDiv.appendChild(card);
@@ -1289,13 +1289,13 @@ function renderMethodology(meth, val){
   ffDiv.innerHTML = `
     <div style="background:var(--bg3);border:1px solid rgba(0,229,255,.2);border-radius:5px;padding:.6rem .8rem">
       <div style="font-size:.56rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem">Cobertura Ψ</div>
-      <div style="font-size:.7rem;color:var(--cyan);font-family:'JetBrains Mono',monospace">
+      <div style="font-size:.7rem;color:var(--cyan);font-family:'Inter',monospace">
         Ψ(d) = 0.4·𝟙[root ∈ R] + 0.6·(|sub_d ∩ R| / |sub_d|)
       </div>
     </div>
     <div style="background:var(--bg3);border:1px solid rgba(255,77,109,.2);border-radius:5px;padding:.6rem .8rem">
       <div style="font-size:.56rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem">Brecha δ</div>
-      <div style="font-size:.7rem;color:var(--rose);font-family:'JetBrains Mono',monospace">
+      <div style="font-size:.7rem;color:var(--rose);font-family:'Inter',monospace">
         δ(d) = score_Ω(d) · (1 − Ψ(d))
       </div>
     </div>`;
@@ -1326,13 +1326,13 @@ function renderMethodology(meth, val){
           fill="${isDarkNow?'#0d1525':'#f0f4ff'}" stroke="${p.color}" stroke-width="${strokeW}"/>
         <rect x="${x}" y="${Y}" width="${boxW}" height="3" rx="8" fill="${p.color}" opacity=".8"/>
         <text x="${cx}" y="${Y+20}" text-anchor="middle"
-          fill="${p.color}" font-size="11" font-family="Syne,sans-serif" font-weight="700">${p.id}</text>
+          fill="${p.color}" font-size="11" font-family="Roboto,sans-serif" font-weight="700">${p.id}</text>
         <text x="${cx}" y="${Y+34}" text-anchor="middle"
-          fill="${txtMain}" font-size="8.5" font-family="JetBrains Mono,monospace" font-weight="600">${p.abbrev}</text>
+          fill="${txtMain}" font-size="8.5" font-family="Inter,monospace" font-weight="600">${p.abbrev}</text>
         <text x="${cx}" y="${Y+47}" text-anchor="middle"
-          fill="${txtSub}" font-size="7.5" font-family="JetBrains Mono,monospace">${p.name.split(' ').slice(0,2).join(' ')}</text>
+          fill="${txtSub}" font-size="7.5" font-family="Inter,monospace">${p.name.split(' ').slice(0,2).join(' ')}</text>
         <text x="${cx}" y="${Y+58}" text-anchor="middle"
-          fill="${txtSub}" font-size="7.5" font-family="JetBrains Mono,monospace">${p.name.split(' ').slice(2).join(' ')}</text>
+          fill="${txtSub}" font-size="7.5" font-family="Inter,monospace">${p.name.split(' ').slice(2).join(' ')}</text>
       </g>`;
 
     // Arrow to next
@@ -1351,7 +1351,7 @@ function renderMethodology(meth, val){
     const x = startX + i*(boxW+gap);
     const cx= x + boxW/2;
     svg += `<text x="${cx}" y="${Y+boxH+22}" text-anchor="middle"
-      fill="${txtSub}" font-size="7" font-family="JetBrains Mono,monospace">${p.api}</text>`;
+      fill="${txtSub}" font-size="7" font-family="Inter,monospace">${p.api}</text>`;
   });
 
   svgEl.setAttribute('viewBox', `0 0 ${W} 200`);
@@ -1372,7 +1372,7 @@ function renderMethodology(meth, val){
     card.innerHTML = `
       <div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.4rem">
         <div style="width:8px;height:8px;border-radius:50%;background:${p.color};flex-shrink:0"></div>
-        <span style="font-size:.62rem;font-weight:700;color:${p.color};font-family:'Syne',sans-serif;
+        <span style="font-size:.62rem;font-weight:700;color:${p.color};font-family:'Roboto',sans-serif;
                      text-transform:uppercase;letter-spacing:.08em">${p.abbrev}</span>
       </div>
       <div style="font-size:.6rem;color:var(--t2);line-height:1.5;margin-bottom:.4rem">${p.description.slice(0,120)}…</div>
@@ -1394,10 +1394,10 @@ function renderMethodology(meth, val){
     d.innerHTML = `
       <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem">
         <span style="font-size:.62rem;color:var(--green)">✓</span>
-        <span style="font-size:.64rem;font-weight:700;color:var(--t1);font-family:'Syne',sans-serif">${vp.property}</span>
+        <span style="font-size:.64rem;font-weight:700;color:var(--t1);font-family:'Roboto',sans-serif">${vp.property}</span>
       </div>
       <div style="font-size:.6rem;color:var(--t2);line-height:1.5;margin-bottom:.3rem">${vp.guarantee}</div>
-      <div style="font-size:.56rem;color:var(--t3);font-family:'JetBrains Mono',monospace">${vp.test}</div>`;
+      <div style="font-size:.56rem;color:var(--t3);font-family:'Inter',monospace">${vp.test}</div>`;
     vpDiv.appendChild(d);
   });
 
@@ -1412,23 +1412,23 @@ function renderMethodology(meth, val){
         Justificación del Título
       </div>
       <div style="font-size:.62rem;color:var(--t2);line-height:1.6">
-        La fase LDCC valida el grado en que la implementación (DT_arch) cubre los 12 conceptos 
-        LegalTech formalizados en MALTG_onto.owl: GDPR, eIDAS, NIS2, Attorney-Client Privilege, 
+        La fase LDCC valida el grado en que la implementación (StructuralDigitalTwin) cubre los 12 conceptos 
+        LegalTech formalizados en MALTG_Odontology.owl: GDPR, eIDAS, NIS2, Attorney-Client Privilege, 
         Smart Legal Contracts, eDiscovery, DLT Notarization y Court Integration.
       </div>
     </div>
     ${ltDim ? `
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6rem;margin-bottom:.8rem">
       <div style="background:var(--bg3);border:1px solid rgba(96,165,250,.2);border-radius:5px;padding:.6rem;text-align:center">
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:#60a5fa">${ltDim.onto_score}</div>
+        <div style="font-family:'Roboto',sans-serif;font-size:1.4rem;font-weight:800;color:#60a5fa">${ltDim.onto_score}</div>
         <div style="font-size:.55rem;color:var(--t3);text-transform:uppercase">Score OWL</div>
       </div>
       <div style="background:var(--bg3);border:1px solid rgba(255,201,71,.2);border-radius:5px;padding:.6rem;text-align:center">
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--gold)">${ltDim.dt_score}</div>
+        <div style="font-family:'Roboto',sans-serif;font-size:1.4rem;font-weight:800;color:var(--gold)">${ltDim.dt_score}</div>
         <div style="font-size:.55rem;color:var(--t3);text-transform:uppercase">Score DT</div>
       </div>
       <div style="background:var(--bg3);border:1px solid rgba(255,77,109,.2);border-radius:5px;padding:.6rem;text-align:center">
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--rose)">${ltDim.gap}</div>
+        <div style="font-family:'Roboto',sans-serif;font-size:1.4rem;font-weight:800;color:var(--rose)">${ltDim.gap}</div>
         <div style="font-size:.55rem;color:var(--t3);text-transform:uppercase">GAP</div>
       </div>
     </div>
@@ -1448,7 +1448,7 @@ function renderMethodology(meth, val){
     <div style="display:flex;flex-wrap:wrap;gap:.3rem">
       ${ltDim.missing_subs.map(r=>`<span style="font-size:.54rem;padding:.12rem .4rem;
         background:rgba(255,77,109,.1);border:1px solid rgba(255,77,109,.2);border-radius:3px;
-        color:var(--rose);font-family:'JetBrains Mono',monospace">${r}</span>`).join('')}
+        color:var(--rose);font-family:'Inter',monospace">${r}</span>`).join('')}
     </div>` : `<div style="font-size:.62rem;color:var(--green)">✓ Todos los conceptos LegalTech cubiertos</div>`}
     ` : '<div style="font-size:.62rem;color:var(--t3)">Recarga para ver datos LegalTech…</div>'}
     <div style="margin-top:.8rem;padding:.6rem;background:var(--bg3);border:1px solid rgba(96,165,250,.15);border-radius:5px">
@@ -1459,7 +1459,7 @@ function renderMethodology(meth, val){
         ${['GDPR (EU) 2016/679','eIDAS 910/2014','NIS2 2022/2555','EDRM','ABA Model Rule 1.6','ECLI','LegalDocML / Akoma Ntoso','eIDAS 2.0 2024/1183'].map(r=>`
         <span style="font-size:.54rem;padding:.12rem .4rem;background:rgba(96,165,250,.08);
           border:1px solid rgba(96,165,250,.15);border-radius:3px;color:#60a5fa;
-          font-family:'JetBrains Mono',monospace">${r}</span>`).join('')}
+          font-family:'Inter',monospace">${r}</span>`).join('')}
       </div>
     </div>`;
 }

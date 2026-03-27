@@ -107,7 +107,6 @@ npm run dev
 | 🎨 | **UI moderna** | Componentes accesibles y responsivos |
 | 🧩 | **Modular** | Arquitectura basada en plugins extensibles |
 | 📦 | **Ligero** | Bundle < 50kb gzip, zero dependencias críticas |
-| 🌍 | **i18n** | Soporte multi-idioma incluido |
 
 ---
 

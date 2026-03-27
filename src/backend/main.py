@@ -1,8 +1,8 @@
 """
 MALTG Architecture Validator — Backend API v3.0 LegalTech Edition
 Endpoints:
-  GET /api/ontology    → parse MALTG_onto.owl → D3 graph JSON
-  GET /api/dt-arch     → serve dt_arch.json + hash
+  GET /api/ontology    → parse MALTG_Odontology.owl → D3 graph JSON
+  GET /api/dt-arch     → serve StructuralDigitalTwin.json + hash
   GET /api/validation  → 9-dimension conformance scores (8 EA + 1 LegalTech)
   GET /api/methodology → formal 5-phase validation methodology metadata
   GET /api/health      → hashes + existence check
@@ -17,18 +17,18 @@ from pathlib import Path
 
 app = FastAPI(
     title="MALTG Architecture Validator API — LegalTech Edition",
-    version="3.0.0",
+    version="1.0.0",
     description=(
         "Validates conformance of a LegalTech enterprise architecture "
-        "implementation (Digital Twin) against the MALTG multi-layer "
-        "governance ontology (TOGAF + COBIT + NIST + LegalTech Domain)."
+        "implementation (Digital Twin) against the MALTG - "
+        "MULTIDIMENSIONAL ARCHITECTURE FOR LEGALTECH GOVERNANCE (TOGAF + COBIT + NIST + LegalTech Domain)."
     ),
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET"], allow_headers=["*"])
 
 DATA_DIR  = Path("/data")
-OWL_PATH  = DATA_DIR / "MALTG_onto.owl"
-DT_PATH   = DATA_DIR / "dt_arch.json"
+OWL_PATH  = DATA_DIR / "MALTG_Odontology.owl"
+DT_PATH   = DATA_DIR / "StructuralDigitalTwin.json"
 FRONT_DIR = Path("/frontend")
 
 OWL_NS   = "http://www.w3.org/2002/07/owl#"
@@ -125,13 +125,13 @@ METHODOLOGY = {
             {
                 "symbol": "Ω",
                 "name": "Ontological Reference Model",
-                "definition": "OWL 2 ontology with taxonomy C (classes), properties P (object/annotation), instances I. MALTG_onto.owl is the canonical Ω.",
+                "definition": "OWL 2 ontology with taxonomy C (classes), properties P (object/annotation), instances I. MALTG_Odontology.owl is the canonical Ω.",
                 "formal": "Ω = ⟨C, P, I, ≤, A⟩ where ≤ is the subsumption relation and A are annotation axioms"
             },
             {
                 "symbol": "Δ",
                 "name": "Structural Digital Twin",
-                "definition": "Directed graph G(V, E) representing the microservice architecture. dt_arch.json is the canonical Δ.",
+                "definition": "Directed graph G(V, E) representing the microservice architecture. StructuralDigitalTwin.json is the canonical Δ.",
                 "formal": "Δ = ⟨V, E, τ, μ⟩ where V are services, E connections, τ: V→ColorType, μ: V→2^C maltg_refs"
             },
             {
@@ -160,8 +160,8 @@ METHODOLOGY = {
             "name": "Ontological Reference Elicitation",
             "abbrev": "ORE",
             "color": "#00e5ff",
-            "description": "Parse MALTG_onto.owl and extract the formal concept graph Ω. Group classes by maltg:layer annotation into validation dimensions. Compute per-class maturity weights from maltg:score.",
-            "inputs":  ["MALTG_onto.owl"],
+            "description": "Parse MALTG_Odontology.owl and extract the formal concept graph Ω. Group classes by maltg:layer annotation into validation dimensions. Compute per-class maturity weights from maltg:score.",
+            "inputs":  ["MALTG_Odontology.owl"],
             "outputs": ["Concept graph Ω", "Dimension clusters C_d", "Score vector score_Ω"],
             "api":     "/api/ontology",
             "academic_ref": "OWL 2 Web Ontology Language Structural Specification (W3C 2012)"
@@ -171,8 +171,8 @@ METHODOLOGY = {
             "name": "Digital Twin Structural Mapping",
             "abbrev": "DTSM",
             "color": "#a855f7",
-            "description": "Parse dt_arch.json and construct the directed service graph Δ. Build the coverage set R by collecting all maltg_ref values (string or array) across all services.",
-            "inputs":  ["dt_arch.json"],
+            "description": "Parse StructuralDigitalTwin.json and construct the directed service graph Δ. Build the coverage set R by collecting all maltg_ref values (string or array) across all services.",
+            "inputs":  ["StructuralDigitalTwin.json"],
             "outputs": ["Service graph Δ", "Coverage set R", "Mapping Γ: C → 2^V"],
             "api":     "/api/dt-arch",
             "academic_ref": "Grieves & Vickers (2017) Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems"
@@ -230,7 +230,7 @@ METHODOLOGY = {
         {
             "property": "Boundedness",
             "guarantee": "All scores ∈ [0, 100]. Coverage Ψ ∈ [0.0, 1.0]. Gap δ ∈ [0, onto_score].",
-            "test": "Boundary test: empty dt_arch → all dt_scores = 0; full coverage → dt_score = onto_score"
+            "test": "Boundary test: empty StructuralDigitalTwin → all dt_scores = 0; full coverage → dt_score = onto_score"
         }
     ]
 }
@@ -308,7 +308,7 @@ def parse_owl():
 # ─── DT Parser ────────────────────────────────────────────────────────────────
 def parse_dt():
     if not DT_PATH.exists():
-        return {"error": f"dt_arch.json not found: {DT_PATH}"}
+        return {"error": f"StructuralDigitalTwin.json not found: {DT_PATH}"}
     try:
         data = json.loads(DT_PATH.read_text(encoding="utf-8"))
         data["hash"] = file_hash(DT_PATH)
@@ -409,11 +409,11 @@ def compute_validation():
 
 
 # ─── Endpoints ────────────────────────────────────────────────────────────────
-@app.get("/api/ontology",    summary="MALTG_onto.owl → D3 graph", tags=["MALTG Data"])
+@app.get("/api/ontology",    summary="MALTG_Odontology.owl → D3 graph", tags=["MALTG Data"])
 def get_ontology(): return parse_owl()
 
-@app.get("/api/dt-arch",     summary="dt_arch.json with hash",    tags=["MALTG Data"])
-def get_dt_arch():  return parse_dt()
+@app.get("/api/dt-arch",     summary="StructuralDigitalTwin.json with hash",    tags=["MALTG Data"])
+def get_StructuralDigitalTwin():  return parse_dt()
 
 @app.get("/api/validation",  summary="9-dim conformance scores",  tags=["MALTG Data"])
 def get_validation(): return compute_validation()

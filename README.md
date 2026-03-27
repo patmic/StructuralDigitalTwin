@@ -3,19 +3,19 @@
 
   <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
   <br/>
-  A Multidimensional LegalTech Governance Architecture (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
+  Multidimensional Architecture LegalTech Governance (<b>MALTG</b>) is formally verified system that connects an <b> OWL 2 governance ontology </b> to a <b> live microservice Digital Twin </b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b> TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 </b> compliance.
   <br/>
   <img src="src/assets/line.svg" height="5px" width="100%"/>
   <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
-  <a href="data/MALTG_onto.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-  <a href="data/dt_arch.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+  <a href="data/MALTG_Odontology.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
+  <a href="data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/⬡_DT_comp-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
   <a href="backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
   <img src="https://skillicons.dev/icons?i=java,python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 </div>
 
 <div align="center">
   <br/> <br/>
-  <b>   MALTG : Multidimensional LegalTech Governance Architecture</b>
+  <b>   MALTG : Multidimensional Architecture LegalTech Governance</b>
   <br/><br/>
   <img src="src/assets/MALTG.png" alt="MALTG"/>
   <br/><br/>
@@ -94,15 +94,15 @@
   ![MALTG formal model — 5-phase validation pipeline](formal_model.svg)
   **`MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`**
 
-  <img src="https://img.shields.io/badge/Ω-MALTG_onto.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/> <img src="https://img.shields.io/badge/Δ-dt_arch.json-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Δ-maltg_ref-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Ψ-engine-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/δ-gap-00e5aa?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Ω-MALTG_Odontology.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Phase 1"/> <img src="https://img.shields.io/badge/Δ-StructuralDigitalTwin.json-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Δ-maltg_ref-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/Ψ-engine-00e5aa?style=flat-square&labelColor=0d1117"/> <img src="https://img.shields.io/badge/δ-gap-00e5aa?style=flat-square&labelColor=0d1117"/>
 
 </div>
 
 | Symbol | Formal Definition | Source |
 |:------:|-------------------|:------:|
-| **Ω** | **Ontological Reference** <br>  `⟨C, P, I, ⊑, A⟩`  <br><sub> 54 classes · 15 properties · RDF/XML serialization</sub>| `MALTG_onto.owl` <br><sub>OWL 2 taxonomy </sub>|
+| **Ω** | **Ontological Reference** <br>  `⟨C, P, I, ⊑, A⟩`  <br><sub> 54 classes · 15 properties · RDF/XML serialization</sub>| `MALTG_Odontology.owl` <br><sub>OWL 2 taxonomy </sub>|
 <sub>↓ parse</sub>
-| **Δ** | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩`  <br><sub> — 39 services · 54 edges/connections · 9 architectural layers · directed graph </sub>| `dt_arch.json` <br><sub>Service graph <code>G(V, E)</code> </sub>|
+| **Δ** | **Structural Digital Twin** <br> `⟨V, E, τ, μ⟩`  <br><sub> — 39 services · 54 edges/connections · 9 architectural layers · directed graph </sub>| `StructuralDigitalTwin.json` <br><sub>Service graph <code>G(V, E)</code> </sub>|
 <sub>↓ align via maltg_ref</sub>
 | **Γ** | **Conformance Mapping** <br>  `Γ: C → 2^V` via `maltg_ref` annotations  <br><sub>Each OWL class mapped to the set of DT services that implement it</sub>| `main.py` |
 <sub>↓ score</sub>
@@ -167,8 +167,8 @@ maltg/
 ├── 🐳  docker-compose.yml              ← single-command deploy, port 8080
 │
 ├── 📁  data/                           ← ✏️  Edit here to update dashboard live
-│   ├── 🦉  MALTG_onto.owl              ← OWL 2 / RDF-XML  (54 classes, 15 props)
-│   └── 🔷  dt_arch.json                ← Digital Twin (39 services, 54 edges/connections)
+│   ├── 🦉  MALTG_Odontology.owl              ← OWL 2 / RDF-XML  (54 classes, 15 props)
+│   └── 🔷  StructuralDigitalTwin.json                ← Digital Twin (39 services, 54 edges/connections)
 │
 ├── 📁  src/
 ├────── 📁  backend/
@@ -218,7 +218,7 @@ open http://localhost:8080/docs             # Swagger UI
 # ③ Verify ALL published scores
 curl -s http://localhost:8080/api/validation | python3 -m json.tool
 ```
-> 💡 **Live editing:** Modify `data/MALTG_onto.owl` or `data/dt_arch.json` → press **↺ Recargar Datos** → scores update instantly, no rebuild required.
+> 💡 **Live editing:** Modify `data/MALTG_Odontology.owl` or `data/StructuralDigitalTwin.json` → press **↺ Recargar Datos** → scores update instantly, no rebuild required.
 </details>
 
 ---
@@ -262,7 +262,7 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 ## ✏️ Extending the Ontology
 
 <details>
-<summary><b>🦉 Add a new LegalTech concept to <code>MALTG_onto.owl</code></b></summary>
+<summary><b>🦉 Add a new LegalTech concept to <code>MALTG_Odontology.owl</code></b></summary>
 
 ```xml
 <!-- Add inside <rdf:RDF> ... </rdf:RDF> -->
@@ -280,7 +280,7 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 </details>
 
 <details>
-<summary><b>🔷 Add a microservice to <code>dt_arch.json</code></b></summary>
+<summary><b>🔷 Add a microservice to <code>StructuralDigitalTwin.json</code></b></summary>
 
 ```json
 {
@@ -322,7 +322,7 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 
 | Attribute | Value |
 |-----------|-------|
-| **Full title** | *MALTG: A Multi-Layer LegalTech Governance Ontology with Structural Digital Twin-Based Conformance Validation for Integrated Enterprise Standards* |
+| **Full title** | *MALTG: Multidimensional Architecture LegalTech Governance Ontology with Structural Digital Twin-Based Conformance Validation for Integrated Enterprise Standards* |
 | **Target journal** | Knowledge-Based Systems — Elsevier · **Q1 · IF 8.8** |
 | **Methodology** | OWL 2 ontology engineering + Structural Digital Twin + multi-case study (N≥2 LegalTech orgs) |
 | **Frameworks** | TOGAF 9.2 · COBIT 5 · NIST CSF 1.1 · GDPR · eIDAS · NIS2 |
@@ -388,8 +388,8 @@ pytest evaluation/test_scoring.py -v
 
 <br/>
 
-[![OWL Classes](https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117)](data/MALTG_onto.owl)
-[![DT Services](https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117)](data/dt_arch.json)
+[![OWL Classes](https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117)](data/MALTG_Odontology.owl)
+[![DT Services](https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117)](data/StructuralDigitalTwin.json)
 [![Dimensions](https://img.shields.io/badge/Governance_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117)](src/backend/main.py)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker)](docker-compose.yml)
 
@@ -520,7 +520,7 @@ LegalTech remediation path → δ = 0.0:
 
 ## 🔬 Extend the Experiment
 
-### Add an OWL 2 class → `data/MALTG_onto.owl`
+### Add an OWL 2 class → `data/MALTG_Odontology.owl`
 
 ```xml
 <!-- Paste inside <rdf:RDF> … </rdf:RDF> -->
@@ -533,7 +533,7 @@ LegalTech remediation path → δ = 0.0:
 </owl:Class>
 ```
 
-### Add a microservice → `data/dt_arch.json`
+### Add a microservice → `data/StructuralDigitalTwin.json`
 
 ```json
 {
@@ -574,7 +574,7 @@ LegalTech remediation path → δ = 0.0:
 
 | Attribute | Value |
 |-----------|-------|
-| **Title** | *Structural Digital Twin–Driven Validation for a Multidimensional LegalTech Governance Architecture Ontology* |
+| **Title** | *Structural Digital Twin–Driven Validation for a Multidimensional Architecture LegalTech Governance Ontology* |
 | **Target** | Applied Sciences · MDPI — **Q1** |
 | **Model** | `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩` — 5-tuple · 4 proven mathematical properties |
 | **Frameworks** | TOGAF 9.2 · COBIT 5 · NIST CSF 1.1 · GDPR · eIDAS 2.0 · NIS2 |

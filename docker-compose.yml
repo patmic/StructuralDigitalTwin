@@ -1,7 +1,7 @@
 # ══════════════════════════════════════════════════════════
-#    MALTG StructuralDigitalTwin(∆) Validator — DockerCompose
-#  ► Edita ./data/MALTG_onto.owl  → Tab 02 se actualiza en 5s
-#  ► Edita ./data/dt_arch.json    → Tab 03 se actualiza en 5s
+#    MALTG: StructuralDigitalTwin(∆) Validator — DockerCompose
+#  ► Edita ./data/MALTG_Odontology.owl  → Tab 02 se actualiza en 5s
+#  ► Edita ./data/StructuralDigitalTwin.json    → Tab 03 se actualiza en 5s
 # ══════════════════════════════════════════════════════════
 services:
   sdt-maltg:
@@ -29,8 +29,8 @@ services:
     labels:
       - "com.maltg.version=2.4.0"
       - "com.maltg.description=MALTG Architecture Validator"
-      - "com.maltg.owl=MALTG_onto.owl"
-      - "com.maltg.dt=dt_arch.json"
+      - "com.maltg.owl=MALTG_Odontology.owl"
+      - "com.maltg.dt=StructuralDigitalTwin.json"
 
 networks:
   default:

@@ -1,6 +1,6 @@
-# MALTG Architecture Validator v2.4 — Live Edition
+# MALTG Architecture Validator v1.0 — Live Edition
 
-**Multi-layer Architecture Ledger Technology Governance**
+**MULTIDIMENSIONAL ARCHITECTURE FOR LEGALTECH GOVERNANCE**
 
 Dashboard completamente data-driven con recarga automática cada 5 segundos.
 
@@ -19,8 +19,8 @@ maltg-v2/
 │   └── requirements.txt        ← fastapi + uvicorn
 │
 ├── data/                       ← ⚡ EDITAR AQUÍ para ver cambios
-│   ├── MALTG_onto.owl          ← Ontología OWL 2 (RDF/XML)
-│   └── dt_arch.json            ← Gemelo Digital estructural
+│   ├── MALTG_Odontology.owl          ← Ontología OWL 2 (RDF/XML)
+│   └── StructuralDigitalTwin.json            ← Gemelo Digital estructural
 │
 └── frontend/
     └── index.html              ← Dashboard SPA (D3 + Chart.js)
@@ -47,9 +47,9 @@ open http://localhost:8080/docs
 
 ---
 
-## ✏️ Cómo editar la Ontología (MALTG_onto.owl)
+## ✏️ Cómo editar la Ontología (MALTG_Odontology.owl)
 
-El archivo `data/MALTG_onto.owl` es un OWL 2 en formato RDF/XML.
+El archivo `data/MALTG_Odontology.owl` es un OWL 2 en formato RDF/XML.
 El dashboard lo re-lee cada 5 segundos. **No se necesita rebuild**.
 
 ### Agregar un nuevo nodo de clase:
@@ -92,9 +92,9 @@ El dashboard lo re-lee cada 5 segundos. **No se necesita rebuild**.
 
 ---
 
-## ✏️ Cómo editar el Gemelo Digital (dt_arch.json)
+## ✏️ Cómo editar el Gemelo Digital (StructuralDigitalTwin.json)
 
-El archivo `data/dt_arch.json` define **completamente** el diagrama del Tab 03.
+El archivo `data/StructuralDigitalTwin.json` define **completamente** el diagrama del Tab 03.
 El dashboard lo re-lee cada 5 segundos. **No se necesita rebuild**.
 
 ### Agregar un nuevo microservicio:
@@ -138,8 +138,8 @@ El dashboard lo re-lee cada 5 segundos. **No se necesita rebuild**.
 
 | Endpoint         | Método | Descripción                              |
 |------------------|--------|------------------------------------------|
-| `/api/ontology`  | GET    | Parse MALTG_onto.owl → JSON graph        |
-| `/api/dt-arch`   | GET    | Serve dt_arch.json con hash de cambios   |
+| `/api/ontology`  | GET    | Parse MALTG_Odontology.owl → JSON graph        |
+| `/api/dt-arch`   | GET    | Serve StructuralDigitalTwin.json con hash de cambios   |
 | `/api/health`    | GET    | Health check + hashes actuales           |
 | `/docs`          | GET    | Documentación interactiva FastAPI        |
 
@@ -148,7 +148,7 @@ El dashboard lo re-lee cada 5 segundos. **No se necesita rebuild**.
 ## 🔄 Flujo de Auto-Reload
 
 ```
-Usuario edita MALTG_onto.owl
+Usuario edita MALTG_Odontology.owl
         │
         ▼
   Archivo cambia en ./data/

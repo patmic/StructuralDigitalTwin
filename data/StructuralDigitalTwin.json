@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "3.0.0",
-    "title": "DT_arch — MALTG LegalTech Gemelo Digital Estructural",
+    "title": "StructuralDigitalTwin — MALTG LegalTech Gemelo Digital Estructural",
     "description": "Gemelo digital de microservicio MALTG — editar este archivo para actualizar el diagrama",
     "maltg_compliance": "TOGAF 9.2 / COBIT 5 / NIST CSF 1.1 / GDPR / eIDAS / NIS2",
     "last_modified": "2025-04-01"
