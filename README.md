@@ -123,9 +123,10 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 </details>
 <br/>
 
-> Live Dashboard 
 <table border="0" >
 <tr><td width="100%" valign="top">
+
+> Live Dashboard 
 
 | Tab | Content (Endpoint : `localhost:8080`) |
 |-----|---------|
