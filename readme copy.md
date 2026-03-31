@@ -1,3 +1,33 @@
+
+    <br/>
+    <b>— RoadMap —</b> 
+    <br/>  MALTG → ⟨Ω, Δ, Γ, Ψ, δ⟩ → Ontologia & Gemelo Digital Estructural → validación
+    <br/>
+    tedto normaldf 
+    <br/>
+    <sub>
+    Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
+    </sub>
+    <code>
+    Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
+    </code>
+
+### Formal Model — `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`
+
+[![](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=Formal+Model+/+Validation+Methodology)]()
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Ω-MALTG_Odontology.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Ω"/>
+<img src="https://img.shields.io/badge/Δ-StructuralDigitalTwin.json-10e98c?style=flat-square&labelColor=0d1117" alt="Δ"/>
+<img src="https://img.shields.io/badge/Γ-maltg_ref_mapping-a855f7?style=flat-square&labelColor=0d1117" alt="Γ"/>
+<img src="https://img.shields.io/badge/Ψ-coverage_engine-ffc947?style=flat-square&labelColor=0d1117" alt="Ψ"/>
+<img src="https://img.shields.io/badge/δ-conformance_gap-ff4d6d?style=flat-square&labelColor=0d1117" alt="δ"/>
+
+</div>
+
+
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=0B4A66&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/> 
 
