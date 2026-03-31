@@ -23,5 +23,3 @@ Performance and governance metrics
 - incluir Tabla  — Estadísticas ontológicas del experimento
 - incluir Tabla  — Resultados de conformidad 
 - RQs respondidas explícitamente en Discusión
-
-
