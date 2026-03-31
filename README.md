@@ -1,38 +1,52 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=aaf&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/>
 
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=🕸️%20⇄%20Δ%20→%20✲&textBg=false&fontColor=696969&fontAlign=50&fontAlignY=50&animation=twinkling" width="50%"/>
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=🕸️%20⇄%20Δ%20→%20✲&textBg=false&fontColor=696969&fontAlign=50&fontAlignY=50&animation=twinkling" width="30%"/>
   <br/>
-  <b>MALTG</b> (Multidimensional Architecture LegalTech Governance) is a formally verified system that connects an <b>OWL 2 governance ontology</b> to a <b>live microservice Structural Digital Twin</b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b>TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2</b> compliance.
+  Multidimensional Architecture LegalTech Governance (<b>MALTG</b>) is a formally verified system that connects an <b>OWL 2 governance ontology</b> to a <b>live microservice Structural Digital Twin</b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b>TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 compliance.
   <br/>
   <img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
   <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
   <a href="/data/MALTG_Odontology.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-  <a href="/data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/⬡_DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
-  <a href="/src/backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
+  <a href="/data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/Δ_DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+  <a href="/src/backend/main.py"><img src="https://img.shields.io/badge/✲_Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
   <a href="/LICENSE"><img src="https://img.shields.io/badge/License-CC_BY_NC_4.0-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
   <br/>
   <img src="https://skillicons.dev/icons?i=vscode,github,docker,python,fastapi&theme=dark" alt="Tech Stack"/>
 </div>
+<br/>
 <div align="center">
-  <br/><br/>
-  <b>MALTG : Multidimensional Architecture LegalTech Governance</b>
-  <br/><br/>
+  <b> MALTG <br/> ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
+  <br/>
+  Multidimensional Architecture LegalTech Governance
+  <br/>
   <img src="/src/assets/imgMALTG.png" alt="MALTG Architecture Diagram"/>
   <br/><br/>
   <sub>
-    <b>— Overview —</b> The system has <b>8 vertical architectural layers</b>
-    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal <b>LegalTech Domain Layer</b> — the novel v3 contribution.
-    Each service carries <code>maltg_ref</code> annotations linking it to OWL 2 concepts in the ontology.
+    <b>— Overview —</b> 
+    <br/>La idea principal es validar una propuesta de modelo de transformacion digital legal (Legaltech) que incorpora modelos empresariales (TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 compliance) y tecnologías emergentes (IA, Blockchain, Open Data, CyberSecurity, Workflows).
+    <br/>
+    <b>— RoadMap —</b> 
+    <br/>  MALTG → ⟨Ω, Δ, Γ, Ψ, δ⟩ → Ontologia & Gemelo Digital Estructural → validación
+    <br/>
+    <code>
     Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
+    </code>
   </sub>
 </div>
 
 ---
 
-[![](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=🗺️+Quick+Start+Map)]()
+<h3>Tech Stack</h3>
+<p>
+⚡ 
+ 
+<details>
 
-```
+<summary> Quick Start Map <span style="color:blue">Texto en azul</span> </summary>
+<span style="color:blue">Texto en azul</span>
+
+```C
 "I want the theory"            →  § Formal Model
 "I want to run it"             →  § Quick Start
 "I want the numbers"           →  § Validation Results
@@ -41,6 +55,13 @@
 "I want the API"               →  § API Reference
 "I want to reproduce results"  →  § ACM Reproducibility
 ```
+</details>
+
+
+
+[![](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=🗺️+Quick+Start+Map)]()
+
+
 
 ---
 
