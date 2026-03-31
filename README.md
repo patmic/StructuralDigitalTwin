@@ -125,37 +125,32 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 > Live Dashboard 
 
+| Tab | Content (Endpoint : `localhost:8080`) |
+|-----|---------|
+| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
+| 🔷 **Structural Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
+| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
+| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
 <table border="0" width="100%">
-<tr>
-    <td colspan="2"> 
-      Live Dashboard 
-      <br><img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
-    </td>
-</tr>
-<tr>
-<td width="10%" valign="top"></td>
-<td width="90%" valign="top">
+<tr><td>
+  <br><img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
   <details>
   <summary>
   1111
   </summary>
   <sub> RoadMap RoadMap RoadMap</sub>
   </details>
-</td>
-</tr>
-<tr>
-<td width="10%" valign="top"></td>
-<td width="90%" valign="top">
+
   <details>
   <summary>
-  1111
+  222
   </summary>
   <sub> RoadMap RoadMap RoadMap</sub>
   </details>
-</td>
-</tr>
+</td></tr>
 </table>
 
+<!-- <td width="90%" valign="top"> -->
 
 | Tab | Content (Endpoint : `localhost:8080`) |
 |-----|---------|
