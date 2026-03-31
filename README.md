@@ -118,18 +118,18 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 > → press **↺ Reload Data** → scores update instantly, no rebuild required.
 
 </details>
+<br/>
 
----
+> Live Dashboard 
 
-## 🎮 Live Dashboard — 5 Tabs
+| Tab | Content / Endpoint : `localhost:8080` |
+|-----|---------|
+| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
+| 🔷 **Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
+| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
+| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
 
-| Tab | Content | Endpoint |
-|-----|---------|----------|
-| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | `localhost:8080` |
-| 🔷 **Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | `localhost:8080` |
-| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | `localhost:8080` |
-| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | `localhost:8080` |
-| 🚀 **Swagger UI** | Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
+>🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
 
 ---
 
