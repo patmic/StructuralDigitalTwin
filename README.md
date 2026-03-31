@@ -125,6 +125,32 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 > Live Dashboard 
 
+<table border="0">
+<tr>
+<td width="10%" valign="top"></td>
+<td width="90%" valign="top">
+  <details>
+  <summary>
+  1111
+  </summary>
+  <sub> RoadMap RoadMap RoadMap</sub>
+  </details>
+</td>
+</tr>
+<tr>
+<td width="10%" valign="top"></td>
+<td width="90%" valign="top">
+  <details>
+  <summary>
+  1111
+  </summary>
+  <sub> RoadMap RoadMap RoadMap</sub>
+  </details>
+</td>
+</tr>
+</table>
+
+
 | Tab | Content (Endpoint : `localhost:8080`) |
 |-----|---------|
 | 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
@@ -139,8 +165,8 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 > — FORMAL MODEL —
 
 <div  align="center">
-  MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩
-  <br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/><br/>
+  <br> MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩ </br>
+  <br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/>
   <img src="https://img.shields.io/badge/Ω-MALTG_Odontology.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Ω"/>
   <img src="https://img.shields.io/badge/Δ-StructuralDigitalTwin.json-10e98c?style=flat-square&labelColor=0d1117" alt="Δ"/>
   <img src="https://img.shields.io/badge/Γ-maltg_ref_mapping-a855f7?style=flat-square&labelColor=0d1117" alt="Γ"/>
@@ -211,7 +237,7 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 <div align="center">
 
-![MALTG 9-dimension conformance dashboard](/src/assets/conformance_dashboard.svg)
+![MALTG 9-dimension conformance dashboard](/src/assets/imgConformance.svg)
 
 | Dimension | `score_Ω` | `Ψ` | `score_Δ` | `δ (gap)` | Status |
 |:----------|:---------:|:---:|:---------:|:---------:|:------:|
@@ -401,12 +427,7 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 
 <div align="center">
 
-[![OWL Classes](https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117)](/data/MALTG_Odontology.owl)
-[![DT Services](https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117)](/data/StructuralDigitalTwin.json)
-[![Dimensions](https://img.shields.io/badge/Governance_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117)](/src/backend/main.py)
-[![Docker](https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker)](/docker-compose.yml)
 [![ACM](https://img.shields.io/badge/ACM_Reproducibility-L1·L2·L3-00e5ff?style=for-the-badge&labelColor=0d1117)](/evaluation)
-[![DOI](https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117&logo=zenodo)](https://zenodo.org)
 
 <br/>
 
