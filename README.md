@@ -38,20 +38,12 @@
 ---
 
 <h3>Tech Stack</h3>
-<p>
-⚡ 
-
-> Quick Start MapX 
  
 
-<details> 
-<summary> <code style="color:blue">texto  </code>
-
-```java
-> Quick Start MapX 
+```java 
+⚡ Quick Start MapX 
 ```
-</summary>
-
+<details> 
 
 ```java
 "I want the theory"            →  § Formal Model
