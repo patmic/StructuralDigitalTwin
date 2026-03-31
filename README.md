@@ -52,9 +52,9 @@ Quick Start Map
 "I want to reproduce results"  →  § ACM Reproducibility
 ```
 </details>
-
-<br/><img src="/src/assets/imgLine.svg" height="5px" width="100%"/><br/>
+<br/>
 <b>— Formal Model —</b>
+<br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/><br/>
 <div  align="center">
     `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`
     <br/>
