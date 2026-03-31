@@ -54,7 +54,7 @@ Quick Start Map
 </details>
 <br/>
 
-> #### — FORMAL MODEL —
+> ### — FORMAL MODEL —
 
 <div  align="center">
   MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩
@@ -74,26 +74,15 @@ Quick Start Map
 | **Ψ** | **Hierarchical Coverage** | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)` ∈ [0,1] | `main.py → psi()` |
 | **δ** | **Conformance Gap** | `δ(d) = score_Ω(d) · (1 − Ψ(d))` — unrealised governance potential | `GET /api/validation` |
 
-### Theorem 1 — Proven Properties of Ψ
 
-| Property | Statement | Verification |
-|----------|-----------|:------------:|
-| **Determinism** | Same `Ω + Δ` always → identical scores | `pytest` exact float assertions |
-| **Monotonicity** | `R ⊆ R′ ⟹ Ψ_R(d) ≤ Ψ_{R′}(d)` | Sensitivity analysis (§ below) |
-| **Completeness** | `R ⊇ C_d ⟹ Ψ(d) = 1.0` | Full-coverage boundary test |
-| **Boundedness** | `Ψ(d) ∈ [0, 1]` for all `d` | Empty / full DT boundary test |
 
----
-
-## ⬡ Architecture Layers
-
-[![](https://readme-typing-svg.demolab.com?font=Roboto&weight=500&pause=5000&color=blue&width=500&height=30&lines=⬡+Architecture+Layers)]()
+> ### — Architecture Layers — 
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔵 Foundation Layer
+> Foundation Layer
 
 | | Framework | Domains | `score_Ω` |
 |---|-----------|---------|:---------:|
@@ -101,7 +90,7 @@ Quick Start Map
 | 🎛️ | **COBIT 5** | EDM · APO · BAI · DSS · MEA | 84.3 |
 | 🔒 | **NIST CSF 1.1** | Identify · Protect · Detect · Respond · Recover | 77.5 |
 
-### 🟣 Technology Integration Layer
+> Technology Integration Layer
 
 | | Domain | Components | `score_Ω` |
 |---|--------|-----------|:---------:|
@@ -113,7 +102,7 @@ Quick Start Map
 </td>
 <td width="50%" valign="top">
 
-### 🔵 LegalTech Domain Layer *(v3 — novel contribution)*
+> LegalTech Domain Layer *(contribution)*
 
 | Concept | Regulation | Status |
 |---------|-----------|:------:|
