@@ -127,7 +127,9 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 <table border="0" width="100%">
 <tr>
-    <td colspan="2"> Live Dashboard 
+    <td colspan="2"> 
+      Live Dashboard 
+      <br><img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
     </td>
 </tr>
 <tr>
