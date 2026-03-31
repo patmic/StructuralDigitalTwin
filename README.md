@@ -34,16 +34,12 @@
     </code>
   </sub>
 </div>
-
----
-
-<h3>Tech Stack</h3>
- 
-
-```java 
-⚡ Quick Start MapX 
-```
+<br/><br/>
 <details> 
+<summary>  
+Quick Start Map
+</summary>
+<img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
 
 ```java
 "I want the theory"            →  § Formal Model
