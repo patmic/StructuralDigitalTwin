@@ -123,30 +123,25 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 </details>
 <br/>
 
+> Live Dashboard 
 <table border="0" >
 <tr><td width="100%" valign="top">
-
-> Live Dashboard 
-
-| Tab | Content (Endpoint : `localhost:8080`) |
-|-----|---------|
-| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
-| 🔷 **Structural Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
-| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
-| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
-> 🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
+<sub> Content (Endpoint : `localhost:8080`) | 🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |  </sub>
+<img src="/src/assets/imgLine.svg" height="3px" width="100%"/>
 
   <details>
   <summary>
   Ontology
   </summary>
-  <sub> RoadMap RoadMap RoadMap</sub>
+  | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom |
+  <sub> | 🦉 **Ontology**  </sub>
   </details>
 
   <details>
   <summary>
   Structural Digital Twin
   </summary>
+  | Interactive canvas — 39-service architecture with layer colour coding | 
   <sub> RoadMap RoadMap RoadMap</sub>
   <div  align="center">
   <br> MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩ </br>
@@ -156,8 +151,25 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
   <img src="https://img.shields.io/badge/Γ-maltg_ref_mapping-a855f7?style=flat-square&labelColor=0d1117" alt="Γ"/>
   <img src="https://img.shields.io/badge/Ψ-coverage_engine-ffc947?style=flat-square&labelColor=0d1117" alt="Ψ"/>
   <img src="https://img.shields.io/badge/δ-conformance_gap-ff4d6d?style=flat-square&labelColor=0d1117" alt="δ"/>
-</div>
+  </div>
   </details>
+
+  <details>
+  <summary>
+  Validation
+  </summary>
+  | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
+  <sub> | 🦉 **Ontology**  </sub>
+  </details>
+
+  <details>
+  <summary>
+  Methodology
+  </summary>
+  | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
+  <sub> | 🦉 **Ontology**  </sub>
+  </details>
+
 </td></tr>
 </table>
 
