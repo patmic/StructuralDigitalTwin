@@ -1,28 +1,24 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=0B4A66&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/>
 
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=⬢%20→%20⬡%20⇄%20🕸️&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=🕸️%20⇄%20Δ%20→%20✲&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
   <br/>
   <b>MALTG</b> (Multidimensional Architecture LegalTech Governance) is a formally verified system that connects an <b>OWL 2 governance ontology</b> to a <b>live microservice Structural Digital Twin</b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b>TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2</b> compliance.
   <br/>
-  <img src="../../Downloads/src/assets/line.svg" height="5px" width="100%"/>
-
-  <a href="https://github.com"><img src="https://img.shields.io/badge/version-3.0.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
-  <a href="../../Downloads/data/MALTG_Odontology.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
-  <a href="../../Downloads/data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/⬡_DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
-  <a href="../../Downloads/src/backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
-  <a href="https://www.mdpi.com/journal/applsci"><img src="https://img.shields.io/badge/Q1_Target-Applied_Sciences_MDPI-ff9a3c?style=for-the-badge&labelColor=0d1117" alt="Q1"/></a>
-  <a href="../../Downloads/LICENSE"><img src="https://img.shields.io/badge/License-MIT-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
+  <img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
+  <a href="https://github.com"><img src="https://img.shields.io/badge/version-1.0_MALTG-00e5ff?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=00e5ff" alt="version"/></a>
+  <a href="/data/MALTG_Odontology.owl"><img src="https://img.shields.io/badge/🕸️_OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117" alt="OWL Classes"/></a>
+  <a href="/data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/⬡_DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
+  <a href="/src/backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
+  <a href="/LICENSE"><img src="https://img.shields.io/badge/License-CC_BY_NC_4.0-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
   <br/><br/>
   <img src="https://skillicons.dev/icons?i=python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
 </div>
-
----
-
+<br/><br/>
 <div align="center">
   <b>MALTG : Multidimensional Architecture LegalTech Governance</b>
   <br/><br/>
-  <img src="../../Downloads/src/assets/MALTG.png" alt="MALTG Architecture Diagram"/>
+  <img src="/src/assets/imgMALTG.png" alt="MALTG Architecture Diagram"/>
   <br/><br/>
   <sub>
     <b>— Overview —</b> The system has <b>8 vertical architectural layers</b>
@@ -221,7 +217,7 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 <div align="center">
 
-![MALTG 9-dimension conformance dashboard](../../Downloads/src/assets/conformance_dashboard.svg)
+![MALTG 9-dimension conformance dashboard](/src/assets/conformance_dashboard.svg)
 
 | Dimension | `score_Ω` | `Ψ` | `score_Δ` | `δ (gap)` | Status |
 |:----------|:---------:|:---:|:---------:|:---------:|:------:|
@@ -262,7 +258,7 @@ OVERALL        73 / 82                             gap −8.9
 
 ## ♟️ Sensitivity Analysis — Monotonicity Verified
 
-![Sensitivity analysis — Theorem 1.2 monotonicity](../../Downloads/src/assets/sensitivity.svg)
+![Sensitivity analysis — Theorem 1.2 monotonicity](/src/assets/sensitivity.svg)
 
 Each remediation step adds one missing `maltg_ref` service to Δ. All curves are strictly non-decreasing, **empirically confirming Theorem 1.2 (Monotonicity)**. LegalTech (blue) shows the steepest gain because it starts at the deepest gap.
 
@@ -430,11 +426,11 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 
 <div align="center">
 
-[![OWL Classes](https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117)](../../Downloads/data/MALTG_Odontology.owl)
-[![DT Services](https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117)](../../Downloads/data/StructuralDigitalTwin.json)
-[![Dimensions](https://img.shields.io/badge/Governance_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117)](../../Downloads/src/backend/main.py)
-[![Docker](https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker)](../../Downloads/docker-compose.yml)
-[![ACM](https://img.shields.io/badge/ACM_Reproducibility-L1·L2·L3-00e5ff?style=for-the-badge&labelColor=0d1117)](../../Downloads/evaluation)
+[![OWL Classes](https://img.shields.io/badge/OWL_2_Classes-54-a855f7?style=for-the-badge&labelColor=0d1117)](/data/MALTG_Odontology.owl)
+[![DT Services](https://img.shields.io/badge/DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117)](/data/StructuralDigitalTwin.json)
+[![Dimensions](https://img.shields.io/badge/Governance_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117)](/src/backend/main.py)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker)](/docker-compose.yml)
+[![ACM](https://img.shields.io/badge/ACM_Reproducibility-L1·L2·L3-00e5ff?style=for-the-badge&labelColor=0d1117)](/evaluation)
 [![DOI](https://img.shields.io/badge/DOI-zenodo.XXXXX-64748b?style=for-the-badge&labelColor=0d1117&logo=zenodo)](https://zenodo.org)
 
 <br/>
