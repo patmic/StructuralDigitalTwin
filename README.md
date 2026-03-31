@@ -121,13 +121,15 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 > → press **↺ Reload Data** → scores update instantly, no rebuild required.
 
 </details>
-<br/>
 
 > Live Dashboard 
 <table border="0" >
 <tr><td width="100%" valign="top">
-<sub> Content (Endpoint : `localhost:8080`) | 🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |  </sub>
-<img src="/src/assets/imgLine.svg" height="3px" width="100%"/>
+  <sub> 
+  🚀 Endpoint : `localhost:8080` 
+  |  Try all API endpoints in-browser, inspect request/response schemas : `localhost:8080/docs`
+  </sub>
+  <img src="/src/assets/imgLine.svg" height="3px" width="100%"/>
 
   <details>
   <summary>
