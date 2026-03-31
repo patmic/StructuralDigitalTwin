@@ -14,9 +14,14 @@
   <br/>
   <img src="https://skillicons.dev/icons?i=vscode,github,docker,python,fastapi&theme=dark" alt="Tech Stack"/>
 </div>
-<br/>
+
+<details> 
+<summary>  
+<b> ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
+</summary>
+<img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
 <div align="center">
-  <b> MALTG <br/> ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
+  <b> MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
   <br/>
   Multidimensional Architecture LegalTech Governance
   <br/>
@@ -34,8 +39,8 @@
     </code>
   </sub>
 </div>
+</details>
 
-<br/><br/>
 <details> 
 <summary>  
 Quick Start Map
@@ -52,6 +57,7 @@ Quick Start Map
 "I want to reproduce results"  →  § ACM Reproducibility
 ```
 </details>
+
 <details>
 <summary> Repository Structure
 </summary>
@@ -122,19 +128,18 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 > Live Dashboard 
 
-| Tab | Content / Endpoint : `localhost:8080` |
+| Tab | Content (Endpoint : `localhost:8080`) |
 |-----|---------|
 | 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
-| 🔷 **Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
+| 🔷 **Structural Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
 | 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
 | 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
 
 >🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
 
----
+<br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/><br/>
 
-
-> ### — FORMAL MODEL —
+> — FORMAL MODEL —
 
 <div  align="center">
   MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩
@@ -396,25 +401,6 @@ OVERALL   onto=82.6  dt=73.7  gap=8.9   PASS  ✅
 | **Reproducibility** | ACM L1 · L2 · L3 |
 
 </div>
-
-### Research Questions
-
-| # | Question | Method | Result |
-|:---:|----------|--------|:------:|
-| **RQ1** | Can OWL 2 formalise TOGAF/COBIT/NIST/LegalTech semantics in one machine-processable model? | HermiT reasoning · structural metrics | ✅ Consistent · μ-closure 100% |
-| **RQ2** | Can a Structural Digital Twin automatically quantify governance gaps? | Ψ engine · monotonicity regression suite | ✅ 10/10 assertions pass |
-| **RQ3** | Which dimensions have the largest gaps in LegalTech microservice ecosystems? | 9-dim conformance scoring · remediation path | LegalTech δ = 27.6 · 6-step path |
-| **RQ4** | How does MALTG compare to ArchiMate+TOGAF and SABSA? | 6-attribute comparison matrix (Table 1) | **6/6** vs 3/6 vs 2/6 |
-
-### Impact Research Questions
-
-| # | Question | Scientific Significance |
-|:---:|----------|------------------------|
-| **IQ1** | Does the bimodal governance maturity pattern generalise across LegalTech organisations of varying scale? | Enables statistically significant benchmarking across N≥3 production deployments |
-| **IQ2** | Can the Ψ/δ engine extend to a federated multi-organisation Digital Twin preserving all 4 proven properties? | Opens cross-organisational LegalTech governance benchmarking — currently unaddressed |
-| **IQ3** | What is the minimal ontological extension to formally capture EU AI Act 2024/1689 high-risk obligations in the MALTG T-Box? | Establishes the first AI-Act-complete LegalTech governance ontology ahead of August 2026 obligations |
-
----
 
 <div align="center">
 
