@@ -17,20 +17,17 @@
 
 <details> 
 <summary>  
-<b> ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
+Overview 
 </summary>
 <img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
 <div align="center">
-  <b> MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩ </b>
-  <br/>
   Multidimensional Architecture LegalTech Governance
-  <br/>
+  <br/><br/>
   <img src="/src/assets/imgMALTG.png" alt="MALTG Architecture Diagram"/>
   <br/><br/>
+  <br/>La idea principal es validar una propuesta de modelo de transformacion digital legal (Legaltech) que incorpora modelos empresariales (TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 compliance) y tecnologías emergentes (IA, Blockchain, Open Data, CyberSecurity, Workflows).
+  <br/>
   <sub>
-    <b>— Overview —</b> 
-    <br/>La idea principal es validar una propuesta de modelo de transformacion digital legal (Legaltech) que incorpora modelos empresariales (TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2 compliance) y tecnologías emergentes (IA, Blockchain, Open Data, CyberSecurity, Workflows).
-    <br/>
     <b>— RoadMap —</b> 
     <br/>  MALTG → ⟨Ω, Δ, Γ, Ψ, δ⟩ → Ontologia & Gemelo Digital Estructural → validación
     <br/>
@@ -137,7 +134,7 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 
 >🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
 
-<br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/><br/>
+<br/><br/>
 
 > — FORMAL MODEL —
 
