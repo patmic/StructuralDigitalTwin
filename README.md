@@ -52,7 +52,87 @@ Quick Start Map
 "I want to reproduce results"  →  § ACM Reproducibility
 ```
 </details>
-<br/>
+<details>
+<summary> Repository Structure
+</summary>
+<img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
+
+```
+maltg/
+├── 📄  README.md
+├── 🐳  docker-compose.yml              ← single-command deploy, port 8080
+│
+├── 📁  data/                           ← ✏️ Edit here to update dashboard live
+│   ├── 🦉  MALTG_Odontology.owl        ← OWL 2 / RDF-XML  (54 classes, 15 props)
+│   └── 🔷  StructuralDigitalTwin.json  ← Digital Twin (39 services, 54 connections)
+│
+├── 📁  src/
+│   ├── 📁  backend/
+│   │   ├── 🐍  main.py                 ← FastAPI · 5 endpoints · Ψ scoring engine
+│   │   ├── 📋  requirements.txt
+│   │   └── 🐳  Dockerfile              ← python:3.12-slim
+│   ├── 📁  frontend/
+│   │   └── 🌐  index.html              ← SPA · 5 tabs · D3.js + Chart.js
+│   └── 📁  assets/
+│       ├── 🖼️  MALTG.png
+│       ├── 🖼️  conformance_dashboard.svg
+│       ├── 🖼️  formal_model.svg
+│       ├── 🖼️  pipeline.svg
+│       └── 🖼️  sensitivity.svg
+│
+└── 📁  evaluation/                     ← academic replication package
+    ├── 📄  expert_survey.pdf
+    ├── 📊  responses_anonymized.csv
+    ├── 📓  analysis.ipynb
+    └── 🧪  test_scoring.py             ← bit-for-bit regression suite
+```
+</details>
+
+<details>
+<summary>
+Deploy & Run
+</summary>
+<img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
+
+```bash
+# 1 · Clone repository
+git clone https://github.com/your-org/maltg && cd maltg
+
+# 2 · Launch (requires Docker >= 20.10) · Python 3.12 · FastAPI · D3.js SPA
+docker compose up -d --build
+
+# 3 · Open the 5-tab dashboard
+open http://localhost:8080
+
+# 4 · Verify system health and all endpoints
+curl http://localhost:8080/api/health       # { status: ok, owl_exists: true }
+curl http://localhost:8080/api/validation   # 9-dim conformance scores (live)
+curl http://localhost:8080/api/methodology  # formal model + 5-phase pipeline
+open http://localhost:8080/docs             # Swagger UI
+
+# 5 · Pretty-print full validation report
+curl -s http://localhost:8080/api/validation | python3 -m json.tool
+```
+
+> 💡 **Live editing:** Modify `data/MALTG_Odontology.owl` or `data/StructuralDigitalTwin.json`
+> → press **↺ Reload Data** → scores update instantly, no rebuild required.
+
+</details>
+
+---
+
+## 🎮 Live Dashboard — 5 Tabs
+
+| Tab | Content | Endpoint |
+|-----|---------|----------|
+| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | `localhost:8080` |
+| 🔷 **Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | `localhost:8080` |
+| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | `localhost:8080` |
+| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | `localhost:8080` |
+| 🚀 **Swagger UI** | Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
+
+---
+
 
 > ### — FORMAL MODEL —
 
@@ -124,90 +204,6 @@ Quick Start Map
 
 ---
 
-## 🚀 Quick Start
-
-<details>
-<summary><b>📁 Repository Structure</b>
-<br/>
-<img src="https://img.shields.io/badge/Structure-2496ed?style=for-the-badge&labelColor=0d1117&logo=wikibooks&logoColor=2496ed" alt="Structure"/>
-</summary>
-
-```
-maltg/
-├── 📄  README.md
-├── 🐳  docker-compose.yml              ← single-command deploy, port 8080
-│
-├── 📁  data/                           ← ✏️ Edit here to update dashboard live
-│   ├── 🦉  MALTG_Odontology.owl        ← OWL 2 / RDF-XML  (54 classes, 15 props)
-│   └── 🔷  StructuralDigitalTwin.json  ← Digital Twin (39 services, 54 connections)
-│
-├── 📁  src/
-│   ├── 📁  backend/
-│   │   ├── 🐍  main.py                 ← FastAPI · 5 endpoints · Ψ scoring engine
-│   │   ├── 📋  requirements.txt
-│   │   └── 🐳  Dockerfile              ← python:3.12-slim
-│   ├── 📁  frontend/
-│   │   └── 🌐  index.html              ← SPA · 5 tabs · D3.js + Chart.js
-│   └── 📁  assets/
-│       ├── 🖼️  MALTG.png
-│       ├── 🖼️  conformance_dashboard.svg
-│       ├── 🖼️  formal_model.svg
-│       ├── 🖼️  pipeline.svg
-│       └── 🖼️  sensitivity.svg
-│
-└── 📁  evaluation/                     ← academic replication package
-    ├── 📄  expert_survey.pdf
-    ├── 📊  responses_anonymized.csv
-    ├── 📓  analysis.ipynb
-    └── 🧪  test_scoring.py             ← bit-for-bit regression suite
-```
-
-</details>
-
-<details>
-<summary><b>⚡ Deploy & Run</b>
-<br/>
-<img src="https://img.shields.io/badge/Docker-ready-2496ed?style=for-the-badge&labelColor=0d1117&logo=docker&logoColor=2496ed" alt="Docker"/>
-</summary>
-
-```bash
-# 1 · Clone repository
-git clone https://github.com/your-org/maltg && cd maltg
-
-# 2 · Launch (requires Docker >= 20.10) · Python 3.12 · FastAPI · D3.js SPA
-docker compose up -d --build
-
-# 3 · Open the 5-tab dashboard
-open http://localhost:8080
-
-# 4 · Verify system health and all endpoints
-curl http://localhost:8080/api/health       # { status: ok, owl_exists: true }
-curl http://localhost:8080/api/validation   # 9-dim conformance scores (live)
-curl http://localhost:8080/api/methodology  # formal model + 5-phase pipeline
-open http://localhost:8080/docs             # Swagger UI
-
-# 5 · Pretty-print full validation report
-curl -s http://localhost:8080/api/validation | python3 -m json.tool
-```
-
-> 💡 **Live editing:** Modify `data/MALTG_Odontology.owl` or `data/StructuralDigitalTwin.json`
-> → press **↺ Reload Data** → scores update instantly, no rebuild required.
-
-</details>
-
----
-
-## 🎮 Live Dashboard — 5 Tabs
-
-| Tab | Content | Endpoint |
-|-----|---------|----------|
-| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | `localhost:8080` |
-| 🔷 **Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | `localhost:8080` |
-| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | `localhost:8080` |
-| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | `localhost:8080` |
-| 🚀 **Swagger UI** | Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
-
----
 
 ## 📊 Validation Results — v3.0
 
