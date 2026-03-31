@@ -131,35 +131,37 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 | 🔷 **Structural Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
 | 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
 | 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
-<table border="0" width="100%">
-<tr><td>
-  <br><img src="/src/assets/imgLine.svg" height="5px" width="100%"/>
+> 🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
+
+<table border="0" >
+<tr><td width="100%" valign="top">
   <details>
   <summary>
-  1111
+  Ontology
   </summary>
   <sub> RoadMap RoadMap RoadMap</sub>
   </details>
 
   <details>
   <summary>
-  222
+  Structural Digital Twin
   </summary>
   <sub> RoadMap RoadMap RoadMap</sub>
+  <div  align="center">
+  <br> MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩ </br>
+  <br/><img src="/src/assets/imgLine.svg" height="3px" width="100%"/>
+  <img src="https://img.shields.io/badge/Ω-MALTG_Odontology.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Ω"/>
+  <img src="https://img.shields.io/badge/Δ-StructuralDigitalTwin.json-10e98c?style=flat-square&labelColor=0d1117" alt="Δ"/>
+  <img src="https://img.shields.io/badge/Γ-maltg_ref_mapping-a855f7?style=flat-square&labelColor=0d1117" alt="Γ"/>
+  <img src="https://img.shields.io/badge/Ψ-coverage_engine-ffc947?style=flat-square&labelColor=0d1117" alt="Ψ"/>
+  <img src="https://img.shields.io/badge/δ-conformance_gap-ff4d6d?style=flat-square&labelColor=0d1117" alt="δ"/>
+</div>
   </details>
 </td></tr>
 </table>
 
-<!-- <td width="90%" valign="top"> -->
+ 
 
-| Tab | Content (Endpoint : `localhost:8080`) |
-|-----|---------|
-| 🦉 **Ontology** | D3.js force graph — 54 OWL 2 classes + 15 properties, interactive zoom | 
-| 🔷 **Structural Digital Twin** | Interactive canvas — 39-service architecture with layer colour coding | 
-| 📊 **Validation** | Live 9-dim radar chart + gap bars — recalculates instantly on data change | 
-| 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
-
->🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
 
 <br/><br/>
 
