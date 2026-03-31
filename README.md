@@ -53,11 +53,11 @@ Quick Start Map
 ```
 </details>
 
----
-
-<div align="left">
-  <b>— Formal Model — `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩` </b> <br/>
-  <div  align="center">
+<br/><img src="/src/assets/imgLine.svg" height="5px" width="100%"/><br/>
+<b>— Formal Model —</b>
+<div  align="center">
+    `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`
+    <br/>
     <img src="https://img.shields.io/badge/Ω-MALTG_Odontology.owl-00e5ff?style=flat-square&labelColor=0d1117" alt="Ω"/>
     <img src="https://img.shields.io/badge/Δ-StructuralDigitalTwin.json-10e98c?style=flat-square&labelColor=0d1117" alt="Δ"/>
     <img src="https://img.shields.io/badge/Γ-maltg_ref_mapping-a855f7?style=flat-square&labelColor=0d1117" alt="Γ"/>
@@ -76,7 +76,6 @@ Quick Start Map
     <code>
     Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
     </code>
-</div>
 
 ### Formal Model — `MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩`
 
@@ -91,7 +90,6 @@ Quick Start Map
 <img src="https://img.shields.io/badge/δ-conformance_gap-ff4d6d?style=flat-square&labelColor=0d1117" alt="δ"/>
 
 </div>
-<sub>
 
 | Symbol | Component | Formal Definition | Artefact |
 |:------:|-----------|-------------------|:--------:|
@@ -100,8 +98,6 @@ Quick Start Map
 | **Γ** | **Conformance Mapping** | `Γ: C → 2^V` via `maltg_ref` — each OWL class mapped to implementing DT services | `main.py` |
 | **Ψ** | **Hierarchical Coverage** | `Ψ(d) = 0.4·𝟙[root∈R] + 0.6·(|sub(d)∩R| / |sub(d)|)` ∈ [0,1] | `main.py → psi()` |
 | **δ** | **Conformance Gap** | `δ(d) = score_Ω(d) · (1 − Ψ(d))` — unrealised governance potential | `GET /api/validation` |
-
-</sub>
 
 ### Theorem 1 — Proven Properties of Ψ
 
