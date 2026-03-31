@@ -40,13 +40,20 @@
 <h3>Tech Stack</h3>
 <p>
 ⚡ 
+
+> Quick Start MapX 
  
-<details>
 
-<summary> Quick Start Map <span style="color:blue">Texto en azul</span> </summary>
-<span style="color:blue">Texto en azul</span>
+<details> 
+<summary> <code style="color:blue">texto  </code>
 
-```C
+```java
+> Quick Start MapX 
+```
+</summary>
+
+
+```java
 "I want the theory"            →  § Formal Model
 "I want to run it"             →  § Quick Start
 "I want the numbers"           →  § Validation Results
