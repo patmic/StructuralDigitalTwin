@@ -124,6 +124,8 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 <br/>
 
 > Live Dashboard 
+<table border="0" >
+<tr><td width="100%" valign="top">
 
 | Tab | Content (Endpoint : `localhost:8080`) |
 |-----|---------|
@@ -133,8 +135,6 @@ curl -s http://localhost:8080/api/validation | python3 -m json.tool
 | 🔬 **Methodology** | Formal 5-phase pipeline with mathematical definitions and phase outputs | 
 > 🚀 Try all API endpoints in-browser, inspect request/response schemas | `localhost:8080/docs` |
 
-<table border="0" >
-<tr><td width="100%" valign="top">
   <details>
   <summary>
   Ontology
