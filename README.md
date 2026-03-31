@@ -54,7 +54,7 @@ Quick Start Map
 </details>
 <br/>
 
->— Formal Model —
+> #### — FORMAL MODEL —
 
 <div  align="center">
   MALTG = ⟨Ω, Δ, Γ, Ψ, δ⟩
