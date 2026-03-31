@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=0B4A66&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=gradient&text=Structural%20Digital%20Twin%E2%80%93Driven%20Validation%20for%20a%20Multidimensional-nl-LegalTech%20Governance%20Architecture%20Ontology&fontSize=27&fontColor=aaf&fontAlign=50&fontAlignY=44&descAlign=32&descAlignY=40" width="100%"/>
 
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=🕸️%20⇄%20Δ%20→%20✲&textBg=false&fontColor=475569&fontAlign=50&fontAlignY=50&animation=twinkling" width="45%"/>
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=70&color=gradient&text=🕸️%20⇄%20Δ%20→%20✲&textBg=false&fontColor=696969&fontAlign=50&fontAlignY=50&animation=twinkling" width="50%"/>
   <br/>
   <b>MALTG</b> (Multidimensional Architecture LegalTech Governance) is a formally verified system that connects an <b>OWL 2 governance ontology</b> to a <b>live microservice Structural Digital Twin</b> and automatically measures — in milliseconds — how far your LegalTech enterprise is from full <b>TOGAF® · COBIT® · NIST CSF · GDPR · eIDAS · NIS2</b> compliance.
   <br/>
@@ -11,19 +11,18 @@
   <a href="/data/StructuralDigitalTwin.json"><img src="https://img.shields.io/badge/⬡_DT_Services-39-10e98c?style=for-the-badge&labelColor=0d1117" alt="DT Services"/></a>
   <a href="/src/backend/main.py"><img src="https://img.shields.io/badge/Validation_Dims-9-ffc947?style=for-the-badge&labelColor=0d1117" alt="Dimensions"/></a>
   <a href="/LICENSE"><img src="https://img.shields.io/badge/License-CC_BY_NC_4.0-f472b6?style=for-the-badge&labelColor=0d1117" alt="License"/></a>
-  <br/><br/>
-  <img src="https://skillicons.dev/icons?i=python,docker,fastapi,github,vscode&theme=dark" alt="Tech Stack"/>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=vscode,github,docker,python,fastapi&theme=dark" alt="Tech Stack"/>
 </div>
-<br/><br/>
 <div align="center">
+  <br/><br/>
   <b>MALTG : Multidimensional Architecture LegalTech Governance</b>
   <br/><br/>
   <img src="/src/assets/imgMALTG.png" alt="MALTG Architecture Diagram"/>
   <br/><br/>
   <sub>
     <b>— Overview —</b> The system has <b>8 vertical architectural layers</b>
-    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD)
-    plus a horizontal <b>LegalTech Domain Layer</b> — the novel v3 contribution.
+    (External → Security → Service Mesh → Microservices → Data → Observability → Infra → CI/CD) plus a horizontal <b>LegalTech Domain Layer</b> — the novel v3 contribution.
     Each service carries <code>maltg_ref</code> annotations linking it to OWL 2 concepts in the ontology.
     Dashed-red boxes indicate <b>governance gaps</b> (concepts defined in Ω but absent from Δ).
   </sub>
